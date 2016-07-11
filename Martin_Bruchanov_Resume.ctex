@@ -1,0 +1,250 @@
+\setupbodyfont[10pt]  %
+\setuppapersize[A4, portrait][A4, portrait] % A3, A4, A5, A6; landscape
+
+% Debugovani
+%\showframe % ukaze nastaveni vzhledu stranky
+%\showgrid   
+
+\setupbodyfontenvironment[default][em=italic]
+
+\setupcolors[state=start]
+\setupcolor[rgb]
+
+%%% Section desing %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\define[2]\CVSection{
+	\framedtext[
+%		width=\overlaywidth,
+%		width=\textwidth,
+		framecolor=darkred,
+		color=darkred,
+		width=\makeupwidth,
+%		height=6\bodyfontsize,
+		offset=2pt,
+%		leftframe=on,
+		bottomframe=on,
+%		background={SectionDeco},
+		align=flushright,
+		frame=off,
+        strut=no,
+	]{#2}
+}
+
+\setuphead[section][
+	command=\CVSection,
+	margin=-4pt,
+	rightmargin=10pt,
+%	color=darkgreen,
+%	style={\FSec}%
+	style={\switchtobodyfont[16pt]\bf},
+%	after=\nowhitespace,
+]
+
+\setupitemize[each][joinedup][leftmargin=2em]
+
+\setuplayout
+	[width=180mm,
+	height=280mm,
+	backspace=15mm,
+	topspace=5mm,
+	top=0mm,
+	header=5mm,
+	footer=8mm,
+	bottom=5mm,
+	margin=20mm,
+	rightedgedistance=15mm,
+	rightedge=70mm]
+
+\setuppagenumbering[location=]
+\setupfootertexts[{\sc Page \currentpage{} of \lastpage}]
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% http://canadian-resume-service.com/catagories/resume-samples/
+
+\starttext
+
+% TITLE
+
+\useURL[homepage][http://bruxy.regnet.cz/]
+\useURL[linkedin][http://www.linkedin.com/in/bruxy]
+\useURL[mail][mail:bruxy@regnet.cz][][bruxy@regnet.cz]
+
+\definecolor[card][r=0.9,g=0.9,b=0.9]
+
+\setupframed[height=3cm,frame=off]
+\startcombination[2]
+{\framed[width=9.5cm,top=\vss,bottom=\vss]{%
+{\switchtobodyfont[24pt]\bf Martin Bruchanov}
+\blank[3mm]\hairline\blank[.5mm]
+{\tfa\sc GNU/Linux consultant \& developer}
+}}{}
+{\framed[width=8cm,align=flushleft,
+	style=\tfx,top=\vss,bottom=\vss,background=color,backgroundcolor=card,
+	offset=5pt]{%
+{\tfx
+{\bf Address:} \dotfill{} Na Valentince 7, Prague 150\,00, Czech Rep. \\
+{\bf Home page:} \dotfill{} \from[homepage]    \\
+{\bf Email:} \dotfill{} {\tt \from[mail]}  \\
+{\bf Linkedin:} \dotfill{} \from[linkedin]     \\
+{\bf Mobile:} \dotfill{} +420\,734\,319\,293    \\
+}}}{}
+\stopcombination
+
+%%%
+\hairline
+\blank[1em]
+%\section{GNU/Linux developer and consultant}
+
+Quality-driven professional and enthusiast with extensive experience in the
+open-source and enterprise IT industry. Strong technical background with
+GNU/Linux, Unix in R\&D environments for the storage, computer system,
+government and telecom industries. Organized and detail-oriented; with strong
+analytical skills. Energetic and hardworking; able to work well under pressure.
+Ready to relocate with an ongoing application for Canadian Permanent Residency.
+
+%Willing to travel and relocate as necessary.
+%expertise in troubleshoot 
+%Uses technology to increase productivity
+%Keeps technical skills up to date
+%Completed Master's degree 
+%Proven skills
+
+\section{Areas of Expertise Include}
+
+\startitemize[columns,three,joinedup]
+%\item HTML5
+\item ANSI C, C99
+\item CentOS, RHEL administration
+\item PHP
+\item PostgreSQL
+\item Python 2.7
+\item RPM packaging
+\item XHTML, CSS
+\item \CONTEXT
+\item Makefile
+\item \MetaPost
+\item bash scripting
+\item git
+\item perl
+\item regular expressions
+\item vim/vi
+\stopitemize
+
+\section{Professional Experience}
+
+\define[3]\Employment{
+	\setupframed[height=1cm,frame=off]
+	\startcombination[2]
+		{\framed[width=13cm,top=\vss,bottom=\vss,align=right]{%
+		{\bfa #1}\\
+		{\sc #2}
+		}}{}
+		{\framed[width=5cm,align=flushright,top=\vss,bottom=\vss]{%
+		{\bf #3}
+		}}{}
+	\stopcombination
+}
+
+\Employment{ZOOM International s.r.o. -- Prague, Czech Republic}%
+	{GNU/Linux system engineer}%
+	{11/2012~-- Present}
+
+\placefigure[right,none]{none}{\externalfigure[logos/ZOOM_logo_curves.pdf][width=4cm]}
+
+\startitemize
+\item Bourne-Again Shell (bash) programming.
+\item Python and perl programming, using XML, XPath.
+\item GNU/Linux (CentOS, RHEL) administration.
+\item PostgreSQL administration.
+\item Administration of code base, maven building, RPM packaging.
+\item User modification of CentOS linux distribution related to ZOOM products.
+\item Courses and training for ZOOM employes: Linux troubleshooting, bash programming, regular expression usage (in English).
+\item Creation of technical documentation in English.
+\stopitemize
+
+\blank
+
+\Employment{HEWLETT-PACKARD s.r.o. -- Prague, Czech Republic}%
+	{ITO Service Delivery Consultant}
+	{10/2008 -- 10/2012}
+
+\placefigure[right,none]{none}{\externalfigure[logos/HP_New_Logo_2D.pdf][width=2cm]}
+
+\startitemize
+\item HP-UX version 11.x system administration and integration for mission critical environment, disaster recovery and Tier 3 support.
+\item POSIX shell, awk and perl programming.
+\item HP-UX Virtualization – HP Integrity Virtual Machines.
+\item Implementation and admininstration of high-available HP-UX environment based on MC/ServiceGuard and Oracle RAC.
+\item Storage Area Networks administration and integration (LVM, disk array EVA, FC switches), Samba/CIFS, NFS.
+\item HP Integrity Virtual Machines implementation for SAP environment.
+\item GNU/Linux administration.
+\stopitemize
+
+\blank
+
+\Employment{RACOM s.r.o. -- Nové Město na Moravě, Czech Republic}%
+	{Software Developer}%
+	{06/2000 -- 09/2002}
+
+\placefigure[right,none]{none}{\externalfigure[logos/racom.gif][width=4cm]}
+
+\startitemize
+\item Building company web platform in HTML, CSS, and PHP programming languages. 
+\item Assembling hardware and software installation for desktops and servers based on MS Windows and Linux. 
+\item Development of documentation system based on \LaTeX{}, Makefiles and CVS.  \item Development and testing of a software tool for the management of Racom's wireless radio network. Programming was done in C, PHP, MySQL and Oracle databases. 
+\item Creation of technical documentation for Racom's radio products, using \LaTeX{}, Makefiles and CVS. 
+\item Development of shell scripts for Linux server administration.
+\stopitemize
+
+\section{Other Experience}
+
+\Employment{Silicon Hill -- Prague, Czech Republic}
+	{Project supervisor, software developer}{10/2002 -- Present}
+
+\placefigure[right,none]{none}{\externalfigure[logos/SH-logo-col.pdf][width=4cm]}
+
+\startitemize
+	\item Development of web-based system for supervising card access, used PHP, MySQL, Apache, bash.
+	\item Building Meteosat reception station for EUMETCAST with web access and Meteosat imagery processing,
+	used C, x86 assembler with SSE, PHP.
+	\item GNU/Linux evangelist and propagator, member of organizing committee of {\em InstallFest} (Prague, CZ).
+\stopitemize
+
+\section{Education}
+
+\startitemize
+	\item {\bf Czech Technical University in Prague, Faculty of Electrical Engineering}\hfill{10/2002 -- 06/2008}	
+	\placefigure[right,none]{none}{\externalfigure[logos/logocvut.pdf][width=1.5cm]}
+	\startitemize
+	\item Master's degree (Canadian equivalency evaluated by WES, ref. no. 2562464/ab).
+	\item Major/Specialization: Electrical Engineering and Computer Science.
+	\item CTU department of Computer Science, {\em Assistant teacher}, teaching lab courses {\em Peripherals devices}, 2007
+	\item Thesis: {\em Image processing of Meteosat data.}
+	\stopitemize
+\stopitemize
+
+\startitemize
+	\item {\bf Technical secondary school {\em SPŠ a VOŠ Žďár nad Sázavou}}\hfill{09/1994 -- 06/1998}
+	\startitemize
+		\item Specialized in Industrial Automation.
+	\stopitemize
+\stopitemize
+	
+\section{Certifications}
+
+\startitemize
+\item P20 HP-UX 11v3 System Administration
+\stopitemize
+
+\section{Languages}
+
+\startitemize
+	\item Czech, native language
+	\item English, full professional proficiency (IELTS overal band score 7.0)
+	\item Russian ({\switchtobodyfont[gentium]русский язык}), basic
+\stopitemize
+
+\stoptext
