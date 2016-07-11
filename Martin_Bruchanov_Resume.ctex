@@ -1,4 +1,4 @@
-\setupbodyfont[10pt]  %
+\setupbodyfont[9.8pt]  %
 \setuppapersize[A4, portrait][A4, portrait] % A3, A4, A5, A6; landscape
 
 % Debugovani
@@ -98,12 +98,20 @@
 \blank[1em]
 %\section{GNU/Linux developer and consultant}
 
+%Quality-driven professional and enthusiast with extensive experience in the
+%open-source and enterprise IT industry. Proficient technical background in
+%GNU/Linux system engineering and administration seeking entry into low-level,
+%embedded development and hardware design. Organized and detail-oriented; with
+%strong analytical skills. Energetic and hardworking; able to work well under
+%pressure.
+
 Quality-driven professional and enthusiast with extensive experience in the
-open-source and enterprise IT industry. Strong technical background with
+open-source and enterprise IT industry. Proficient technical background in
 GNU/Linux, Unix in R\&D environments for the storage, computer system,
 government and telecom industries. Organized and detail-oriented; with strong
 analytical skills. Energetic and hardworking; able to work well under pressure.
-Ready to relocate with an ongoing application for Canadian Permanent Residency.
+
+%Ready to relocate with an ongoing application for Canadian Permanent Residency.
 
 %Willing to travel and relocate as necessary.
 %expertise in troubleshoot 
@@ -112,25 +120,23 @@ Ready to relocate with an ongoing application for Canadian Permanent Residency.
 %Completed Master's degree 
 %Proven skills
 
+\vskip -5mm
+
 \section{Areas of Expertise Include}
 
-\startitemize[columns,three,joinedup]
-%\item HTML5
-\item ANSI C, C99
-\item CentOS, RHEL administration
-\item PHP
-\item PostgreSQL
-\item Python 2.7
-\item RPM packaging
-\item XHTML, CSS
-\item \CONTEXT
-\item Makefile
-\item \MetaPost
-\item bash scripting
-\item git
-\item perl
-\item regular expressions
-\item vim/vi
+%\startitemize[columns,three,joinedup]
+\startitemize[joinedup]
+\item {\bf Programming:} bash, Python, perl, PHP, ANSI C/C99/intermediate C++ (GCC chain).
+\item {\bf Favourite IDE:} {\tt vim} + {\tt Makefile} + {\tt git}.
+\item {\bf Advanced GNU/Linux and Unix administration:} CentOS, RHEL, Fedora, Pidora, HP-UX
+\item {\bf Extensive debugging and profiling:} {\tt gdb}, Valgrind, {\tt strace}, {\tt gprof}.
+\item {\bf Typography and graphics:} \CONTEXT, \LaTeX, \METAPOST, GIMP, Inkscape.
+\item {\bf Web:} HTML5, XHTML, CSS3.
+\item {\bf Scientific software:} MATLAB, Octave, gnuplot, NumPy.
+%\item {\bf Scientific software:} MATLAB, Octave, GNU Radio, gnuplot, NumPy.
+%\item {\bf Hardware:} Xilinx FPGA (Spartan), VHDL, ATMEL AVR, ARM, embedded Linux, x86 SSE asm.
+%\item {\bf Electronics:} PCB soldering and debugging, oscilloscope and logic analyzer usage.
+%\item {\bf 3D Printing:} operating printer and prototype design in FreeCAD.
 \stopitemize
 
 \section{Professional Experience}
@@ -212,6 +218,47 @@ Ready to relocate with an ongoing application for Canadian Permanent Residency.
 	used C, x86 assembler with SSE, PHP.
 	\item GNU/Linux evangelist and propagator, member of organizing committee of {\em InstallFest} (Prague, CZ).
 \stopitemize
+
+\section{Personal Projects}
+
+
+\useURL[linuxguru][http://gnulinux.guru]
+\Employment{GNU/Linux Guru}{\from[linuxguru]}{2014}
+
+\placefigure[right,none]{none}{
+\framed[width=4.5cm,frame=on,framecolor=darkgray,height=4cm]{
+\externalfigure[logos/housenka_title.png][width=4cm]
+\crlf
+{\ss\tfx Classic Snake game clone in bash. Featured on Hackaday.} 
+}
+}
+
+\startitemize
+\item New project to deliver Linux related tutorial and cheat sheets to the community.
+\item Current published materials include cheat sheets for bash, ViM and Python.
+\stopitemize
+
+\blank
+\Employment{Author}{Image Communication on Short Waves}{}
+\useURL[sstvhandbook][http://sstv-handbook.com]
+
+\startitemize
+\item An e-book for ham radio operators and radio listeners interested in
+special communication modes for image transmission~-- SSTV, radio facsimile
+(WEFAX) and digital SSTV (HamDRM).
+\item Available on \from[sstvhandbook].
+\stopitemize
+
+\blank
+
+\Employment{Blogger}{\from[homepage]}{2000~-- Present}
+
+\startitemize
+\item Technical articles on my areas of interest including: programming, Linux,
+ham radio, Meteosat reception.
+%\item Creator of {\tt housenka.sh} bash game featured on Hackday.
+\stopitemize
+
 
 \section{Education}
 
