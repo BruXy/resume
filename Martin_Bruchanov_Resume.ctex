@@ -3,7 +3,7 @@
 \enableregime[utf] % latin2
 \setupoutput[pdftex] % dvips, acrobat
 \pdfminorversion=4 % verze pdf
-\setupbodyfont[9.8pt]  %
+\setupbodyfont[9.65pt]  %
 \setuppapersize[letter, portrait] % A3, A4, A5, A6; landscape
 
 % Debugovani
@@ -29,7 +29,7 @@
 %		leftframe=on,
 		bottomframe=on,
 %		background={SectionDeco},
-		align=flushright,
+		align=flushleft, % flushright
 		frame=off,
         strut=no,
 	]{#2}
@@ -42,30 +42,44 @@
 %	color=darkgreen,
 %	style={\FSec}%
 	style={\switchtobodyfont[14pt]\bf},
-	before={\vskip -2mm},
+	before={\vskip -1mm},
 %	after=\nowhitespace,
 ]
 
-\setupitemize[each][joinedup][leftmargin=2em]
+\setupitemize[each][joinedup][leftmargin=0em]
 
 %A4 210 x 297 mm
 %letter 215.9 x 279.4
 
 \setuplayout
-	[width=190mm,
-	height=260mm,
-	backspace=15mm,
+	[width=200mm,
+	height=268mm,
+	backspace=8mm,
 	topspace=5mm,
 	top=0mm,
 	header=5mm,
 	footer=8mm,
-	bottom=5mm,
+	bottom=3mm,
 	margin=20mm,
 	rightedgedistance=15mm,
 	rightedge=70mm]
 
 \setuppagenumbering[location=]
 \setupfootertexts[{\sc Page \currentpage{} of \lastpage}]
+
+% For \url:
+
+\setupurl
+   [color=black,
+    style=\tt]
+
+% For \goto and \from:
+
+\setupinteraction
+   [state=start,
+    color=black,
+    style=\tt]
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -104,11 +118,14 @@
 
 \section{Highlights of Qualifications}
 
+\placefigure[right,none]{none}{\externalfigure[logos/tux.svg][height=2.5cm]}
+
 \startitemize[joinedup]
-\item Over 15 years experience in Linux and UNIX system administration and development for critical environments.
-\item Proficient in bash, Python and perl scripting.
+\item Over 15 years experience in Linux and UNIX system development and administration for critical environments.
+\item Proficient in bash, Python, C and perl.
+\item Linux user-space programming and POSIX interface knowledge. 
 \item Experienced Agile development team member.
-\item Proficient knowledge of storage, networking and virtualization principles.
+\item Proficient knowledge of storage, networking, virtualization and cloud principles.
 \item Over 7 years experience in multicultural and distributed teams.
 \item Organized and detail-oriented; with strong analytical skills. 
 \item Energetic team worker with good communication skills. 
@@ -120,25 +137,24 @@
 \startitemize[joinedup]
 \item {\bf Programming:} bash, Python, perl, PHP, ANSI C/C99/intermediate C++ (GCC chain).
 \item {\bf Favourite IDE:} {\tt vim} + {\tt Makefile} + {\tt git}.
-\item {\bf Advanced GNU/Linux and Unix administration:} CentOS, RHEL, Fedora, Pidora, HP-UX
 \item {\bf Extensive debugging and profiling:} {\tt gdb}, Valgrind, {\tt strace}, {\tt gprof}.
 \item {\bf Typography and graphics:} \CONTEXT, \LaTeX, \METAPOST, GIMP, Inkscape.
-\item {\bf Web:} HTML5, XHTML, CSS3.
-\item {\bf Scientific software:} MATLAB, Octave, gnuplot, NumPy.
+\item {\bf Web:} HTML5, CSS3, intermediate JavaScript.
+%\item {\bf Scientific software:} MATLAB, Octave, gnuplot, NumPy.
 %\item {\bf Scientific software:} MATLAB, Octave, GNU Radio, gnuplot, NumPy.
 %\item {\bf Hardware:} Xilinx FPGA (Spartan), VHDL, ATMEL AVR, ARM, embedded Linux, x86 SSE asm.
 %\item {\bf Electronics:} PCB soldering and debugging, oscilloscope and logic analyzer usage.
 %\item {\bf 3D Printing:} operating printer and prototype design in FreeCAD.
 \stopitemize
 
-\vskip -5mm
+%\vskip -5mm
 
 \section{Professional Experience}
 
 \define[3]\Employment{
 	\setupframed[height=1cm,frame=off]
 	\startcombination[2]
-		{\framed[width=13cm,top=\vss,bottom=\vss,align=right]{%
+		{\framed[width=14.5cm,top=\vss,bottom=\vss,align=right]{%
 		{\bfa #1}\\
 		{\sc #2}
 		}}{}
@@ -148,9 +164,28 @@
 	\stopcombination
 }
 
+\Employment{Athletigen Technologies Inc. -- Halifax, Nova Scotia}
+	{DevOps Engineer}
+	{10/2015~-- present}
+
+\placefigure[right,none]{none}{\externalfigure[logos/athletigen.pdf][width=4cm]}
+
+\startitemize
+\item Administration of Amazon Web Services (AWS) cloud environment.
+\item HIPPA compliant environment.
+\item Site reliability engineering for Athletigen web, Tomcat, Apache, Nginx troubleshooting.
+\item Container virtualization with Docker.
+\item AWS utilities development with bash and Python (boto3).
+\item Management of OpsWorks configuration with Chef recipes and ruby.
+\item Metric collection with {\tt collectd}, InfluxDB and Grafana.
+\item Network environment and OpenVPN configuration.
+\stopitemize
+
+\blank
+
 \Employment{ZOOM International -- Prague, Czech Republic}%
 	{GNU/Linux System Engineer}%
-	{11/2012~-- Present}
+	{11/2012~-- 09/2015}
 
 \placefigure[right,none]{none}{\externalfigure[logos/ZOOM_logo_curves.pdf][width=4cm]}
 
@@ -211,24 +246,23 @@
 	\item GNU/Linux evangelist and propagator, member of organizing committee of {\em InstallFest} (Prague, CZ).
 \stopitemize
 
-\blank
+%\blank
 
-\Employment{Czech Technical University -- Prague, Czech Republic}
-    {Assistant teacher}{03/2007 -- 07/2007} 
-
-\startitemize
-\item Taught a lab course on {\em Peripherals devices}.
-\item Prepared study materials.
-\stopitemize
+%\Employment{Czech Technical University -- Prague, Czech Republic}
+%    {Assistant teacher}{03/2007 -- 07/2007} 
+%
+%\startitemize
+%\item Taught a lab course on {\em Peripherals devices}.
+%\item Prepared study materials.
+%\stopitemize
 
 \section{Personal Projects}
 
-
 \useURL[linuxguru][http://gnulinux.guru]
-\Employment{GNU/Linux Guru}{\from[linuxguru]}{2014}
+\Employment{GNU/Linux Guru}{\from[linuxguru]}{2014 -- present}
 
 \placefigure[right,none]{none}{
-\framed[width=4.5cm,frame=on,framecolor=darkgray,height=4cm]{
+\framed[width=4.4cm,frame=on,framecolor=darkgray,height=3.8cm,align=center]{
 \externalfigure[logos/housenka_title.png][width=4cm]
 \crlf
 {\ss\tfx Classic Snake game clone in bash. Featured on Hackaday.} 
@@ -262,16 +296,14 @@ ham radio and Meteosat reception.
 %\item Creator of {\tt housenka.sh} bash game featured on Hackday.
 \stopitemize
 
-
 \section{Education}
 
 \startitemize
-	\item {\bf Czech Technical University in Prague, Faculty of Electrical Engineering}\hfill{10/2002 -- 06/2008}	
 	\placefigure[right,none]{none}{\externalfigure[logos/logocvut.pdf][width=1.5cm]}
+	\item {\bf Czech Technical University in Prague, Faculty of Electrical Engineering}\hfill{10/2002 -- 06/2008}	
 	\startitemize
 	\item Master's degree (Canadian equivalency evaluated by WES, ref. no. 2562464/ab).
 	\item Major/Specialization: Electrical Engineering and Computer Science.
-	\item CTU department of Computer Science, {\em Assistant teacher}, teaching lab courses {\em Peripherals devices}, 2007
 	\item Thesis: {\em Image processing of Meteosat data.}
 	\stopitemize
 \stopitemize
@@ -279,14 +311,15 @@ ham radio and Meteosat reception.
 \startitemize
 	\item {\bf Technical secondary school {\em SPŠ a VOŠ Žďár nad Sázavou}}\hfill{09/1994 -- 06/1998}
 	\startitemize
-		\item Specialized in Industrial Automation.
+		\item Specialized in control systems and automation engineering.
 	\stopitemize
 \stopitemize
 	
 \section{Certifications}
 
 \startitemize
-\item P20 HP-UX 11v3 System Administration
+\item {\bf HP0-P20: HP-UX 11i v3 System Administration}; Prometric, License TC0DUS501E, issued 2010.
+\item {\bf Red Hat Certified System Administrator}; Red Hat, License 150-126-340, issued 2015.
 \stopitemize
 
 \section{Languages}

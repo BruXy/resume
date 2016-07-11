@@ -1,0 +1,5 @@
+*.pdf
+!logos/*.pdf
+*.tuc
+*.log
+
