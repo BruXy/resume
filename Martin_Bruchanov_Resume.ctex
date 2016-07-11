@@ -1,5 +1,10 @@
+\mainlanguage[en]
+\language[en] 
+\enableregime[utf] % latin2
+\setupoutput[pdftex] % dvips, acrobat
+\pdfminorversion=4 % verze pdf
 \setupbodyfont[9.8pt]  %
-\setuppapersize[A4, portrait][A4, portrait] % A3, A4, A5, A6; landscape
+\setuppapersize[letter, portrait] % A3, A4, A5, A6; landscape
 
 % Debugovani
 %\showframe % ukaze nastaveni vzhledu stranky
@@ -36,15 +41,19 @@
 	rightmargin=10pt,
 %	color=darkgreen,
 %	style={\FSec}%
-	style={\switchtobodyfont[16pt]\bf},
+	style={\switchtobodyfont[14pt]\bf},
+	before={\vskip -2mm},
 %	after=\nowhitespace,
 ]
 
 \setupitemize[each][joinedup][leftmargin=2em]
 
+%A4 210 x 297 mm
+%letter 215.9 x 279.4
+
 \setuplayout
-	[width=180mm,
-	height=280mm,
+	[width=190mm,
+	height=260mm,
 	backspace=15mm,
 	topspace=5mm,
 	top=0mm,
@@ -58,44 +67,14 @@
 \setuppagenumbering[location=]
 \setupfootertexts[{\sc Page \currentpage{} of \lastpage}]
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % http://canadian-resume-service.com/catagories/resume-samples/
 
 \starttext
 
-% TITLE
+\input header.ctex % TITLE
 
-\useURL[homepage][http://bruxy.regnet.cz/]
-\useURL[linkedin][http://www.linkedin.com/in/bruxy]
-\useURL[mail][mail:bruxy@regnet.cz][][bruxy@regnet.cz]
-
-\definecolor[card][r=0.9,g=0.9,b=0.9]
-
-\setupframed[height=3cm,frame=off]
-\startcombination[2]
-{\framed[width=9.5cm,top=\vss,bottom=\vss]{%
-{\switchtobodyfont[24pt]\bf Martin Bruchanov}
-\blank[3mm]\hairline\blank[.5mm]
-{\tfa\sc GNU/Linux consultant \& developer}
-}}{}
-{\framed[width=8cm,align=flushleft,
-	style=\tfx,top=\vss,bottom=\vss,background=color,backgroundcolor=card,
-	offset=5pt]{%
-{\tfx
-{\bf Address:} \dotfill{} Na Valentince 7, Prague 150\,00, Czech Rep. \\
-{\bf Home page:} \dotfill{} \from[homepage]    \\
-{\bf Email:} \dotfill{} {\tt \from[mail]}  \\
-{\bf Linkedin:} \dotfill{} \from[linkedin]     \\
-{\bf Mobile:} \dotfill{} +420\,734\,319\,293    \\
-}}}{}
-\stopcombination
-
-%%%
-\hairline
-\blank[1em]
 %\section{GNU/Linux developer and consultant}
 
 %Quality-driven professional and enthusiast with extensive experience in the
@@ -105,11 +84,14 @@
 %strong analytical skills. Energetic and hardworking; able to work well under
 %pressure.
 
-Quality-driven professional and enthusiast with extensive experience in the
-open-source and enterprise IT industry. Proficient technical background in
-GNU/Linux, Unix in R\&D environments for the storage, computer system,
-government and telecom industries. Organized and detail-oriented; with strong
-analytical skills. Energetic and hardworking; able to work well under pressure.
+%Quality-driven professional and enthusiast with extensive experience in the
+%open-source and enterprise IT industry. 
+
+
+%Proficient technical background in
+%GNU/Linux, Unix in R\&D environments for the storage, computer system,
+%government and telecom industries. Organized and detail-oriented; with strong
+%analytical skills. Energetic and hardworking; able to work well under pressure.
 
 %Ready to relocate with an ongoing application for Canadian Permanent Residency.
 
@@ -120,7 +102,17 @@ analytical skills. Energetic and hardworking; able to work well under pressure.
 %Completed Master's degree 
 %Proven skills
 
-\vskip -5mm
+\section{Highlights of Qualifications}
+
+\startitemize[joinedup]
+\item Over 15 years experience in Linux and UNIX system administration and development for critical environments.
+\item Proficient in bash, Python and perl scripting.
+\item Experienced Agile development team member.
+\item Proficient knowledge of storage, networking and virtualization principles.
+\item Over 7 years experience in multicultural and distributed teams.
+\item Organized and detail-oriented; with strong analytical skills. 
+\item Energetic team worker with good communication skills. 
+\stopitemize
 
 \section{Areas of Expertise Include}
 
@@ -139,6 +131,8 @@ analytical skills. Energetic and hardworking; able to work well under pressure.
 %\item {\bf 3D Printing:} operating printer and prototype design in FreeCAD.
 \stopitemize
 
+\vskip -5mm
+
 \section{Professional Experience}
 
 \define[3]\Employment{
@@ -154,55 +148,53 @@ analytical skills. Energetic and hardworking; able to work well under pressure.
 	\stopcombination
 }
 
-\Employment{ZOOM International s.r.o. -- Prague, Czech Republic}%
-	{GNU/Linux system engineer}%
+\Employment{ZOOM International -- Prague, Czech Republic}%
+	{GNU/Linux System Engineer}%
 	{11/2012~-- Present}
 
 \placefigure[right,none]{none}{\externalfigure[logos/ZOOM_logo_curves.pdf][width=4cm]}
 
 \startitemize
-\item Bourne-Again Shell (bash) programming.
-\item Python and perl programming, using XML, XPath.
-\item GNU/Linux (CentOS, RHEL) administration.
-\item PostgreSQL administration.
-\item Administration of code base, maven building, RPM packaging.
-\item User modification of CentOS linux distribution related to ZOOM products.
-\item Courses and training for ZOOM employes: Linux troubleshooting, bash programming, regular expression usage (in English).
-\item Creation of technical documentation in English.
+\item Programmed system utilities in Bourne-Again Shell (bash) and Python.
+\item Owner of GNU/Linux (CentOS, RHEL) architecture, product integration and development.
+\item Administered PostgreSQL database and its integration.
+\item Supervised code base, maven building and advanced RPM packaging.
+\item Facilitated training materials and sessions for ZOOM employees on Linux troubleshooting, bash programming and regular expressions usage (in English).
+\item Created technical documentation in English.
 \stopitemize
 
 \blank
 
-\Employment{HEWLETT-PACKARD s.r.o. -- Prague, Czech Republic}%
+\Employment{HEWLETT-PACKARD -- Prague, Czech Republic}%
 	{ITO Service Delivery Consultant}
 	{10/2008 -- 10/2012}
 
 \placefigure[right,none]{none}{\externalfigure[logos/HP_New_Logo_2D.pdf][width=2cm]}
 
 \startitemize
-\item HP-UX version 11.x system administration and integration for mission critical environment, disaster recovery and Tier 3 support.
-\item POSIX shell, awk and perl programming.
-\item HP-UX Virtualization – HP Integrity Virtual Machines.
-\item Implementation and admininstration of high-available HP-UX environment based on MC/ServiceGuard and Oracle RAC.
-\item Storage Area Networks administration and integration (LVM, disk array EVA, FC switches), Samba/CIFS, NFS.
-\item HP Integrity Virtual Machines implementation for SAP environment.
-\item GNU/Linux administration.
+\item Administered and integrated HP-UX and GNU/Linux for mission critical environments and disaster recovery as Tier 3 support (24$\times$7).
+\item Developed system automation utilities in POSIX shell, awk and perl.
+\item Implemented virtualized architecture with HP Integrity Virtual Machines.
+\item Configured critical high-availability environments based on MC/ServiceGuard and Oracle RAC.
+\item Integrated Storage Area Networks using LVM, EVA disk arrays, FC switches, Samba/CIFS and NFS.
+\item Implemented HP-UX virtualized solution for SAP environment.
 \stopitemize
 
 \blank
 
-\Employment{RACOM s.r.o. -- Nové Město na Moravě, Czech Republic}%
+\Employment{RACOM  -- Nové Město na Moravě, Czech Republic}%
 	{Software Developer}%
 	{06/2000 -- 09/2002}
 
 \placefigure[right,none]{none}{\externalfigure[logos/racom.gif][width=4cm]}
 
 \startitemize
-\item Building company web platform in HTML, CSS, and PHP programming languages. 
-\item Assembling hardware and software installation for desktops and servers based on MS Windows and Linux. 
-\item Development of documentation system based on \LaTeX{}, Makefiles and CVS.  \item Development and testing of a software tool for the management of Racom's wireless radio network. Programming was done in C, PHP, MySQL and Oracle databases. 
-\item Creation of technical documentation for Racom's radio products, using \LaTeX{}, Makefiles and CVS. 
-\item Development of shell scripts for Linux server administration.
+\item Implemented company web platform in HTML, CSS, and PHP. 
+\item Assembled hardware and software installation for desktops and servers based on Linux and MS Windows. 
+\item Developed documentation system based on \LaTeX{}, Makefiles and CVS.  
+\item Created a software tool for the management of RACOM's wireless radio network, programmed in C, PHP, MySQL and Oracle databases. 
+\item Created technical documentation for RACOM's radio products, using \LaTeX{}, Makefiles and CVS. 
+\item Developed shell scripts for Linux server administration.
 \stopitemize
 
 \section{Other Experience}
@@ -213,10 +205,20 @@ analytical skills. Energetic and hardworking; able to work well under pressure.
 \placefigure[right,none]{none}{\externalfigure[logos/SH-logo-col.pdf][width=4cm]}
 
 \startitemize
-	\item Development of web-based system for supervising card access, used PHP, MySQL, Apache, bash.
-	\item Building Meteosat reception station for EUMETCAST with web access and Meteosat imagery processing,
+	\item Developed web platform for supervising card access, used PHP, MySQL, Apache, bash.
+	\item Built Meteosat reception station for EUMETCAST with web access and Meteosat imagery processing,
 	used C, x86 assembler with SSE, PHP.
 	\item GNU/Linux evangelist and propagator, member of organizing committee of {\em InstallFest} (Prague, CZ).
+\stopitemize
+
+\blank
+
+\Employment{Czech Technical University -- Prague, Czech Republic}
+    {Assistant teacher}{03/2007 -- 07/2007} 
+
+\startitemize
+\item Taught a lab course on {\em Peripherals devices}.
+\item Prepared study materials.
 \stopitemize
 
 \section{Personal Projects}
@@ -239,6 +241,7 @@ analytical skills. Energetic and hardworking; able to work well under pressure.
 \stopitemize
 
 \blank
+
 \Employment{Author}{Image Communication on Short Waves}{}
 \useURL[sstvhandbook][http://sstv-handbook.com]
 
@@ -255,7 +258,7 @@ special communication modes for image transmission~-- SSTV, radio facsimile
 
 \startitemize
 \item Technical articles on my areas of interest including: programming, Linux,
-ham radio, Meteosat reception.
+ham radio and Meteosat reception.
 %\item Creator of {\tt housenka.sh} bash game featured on Hackday.
 \stopitemize
 

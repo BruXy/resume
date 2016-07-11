@@ -1,0 +1,31 @@
+\useURL[homepage][http://bruxy.regnet.cz/]
+\useURL[linkedin][http://www.linkedin.com/in/bruxy]
+\useURL[mail][mail:bruxy@regnet.cz][][bruxy@regnet.cz]
+
+\definecolor[card][r=0.9,g=0.9,b=0.9]
+
+\setupframed[height=3cm,frame=off]
+\startcombination[2]
+{\framed[width=9.5cm,top=\vss,bottom=\vss]{%
+{\switchtobodyfont[24pt]\bf Martin Bruchanov}
+\blank[3mm]\hairline\blank[.5mm]
+{\tfa\sc GNU/Linux Systems Engineer}
+}}{}
+{\framed[width=8cm,align=flushleft,
+	style=\tfx,top=\vss,bottom=\vss,background=color,backgroundcolor=card,
+	offset=5pt]{%
+{\tfx
+{\bf Current Address:} \dotfill{} Prague, Czech Republic \\
+{\bf Other address:} \dotfill{} Halifax, NS; from September 2015 \\ 
+{\bf Home page:} \dotfill{} \from[homepage]    \\
+{\bf Email:} \dotfill{} {\tt \from[mail]}  \\
+{\bf Linkedin:} \dotfill{} \from[linkedin]     \\
+{\bf Mobile:} \dotfill{} +420\,734\,319\,293    \\
+}}}{}
+\stopcombination
+
+%%%
+\hairline
+\blank[1em]
+
+
