@@ -1,5 +1,7 @@
 RESUME=Martin_Bruchanov_Resume
 
+all: pdf txt
+
 $(RESUME).pdf: $(RESUME).ctex header.ctex Makefile
 	context $(RESUME).ctex
 

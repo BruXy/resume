@@ -3,7 +3,7 @@
 \enableregime[utf] % latin2
 \setupoutput[pdftex] % dvips, acrobat
 \pdfminorversion=4 % verze pdf
-\setupbodyfont[9.65pt]  %
+\setupbodyfont[9.0pt]  %
 \setuppapersize[letter, portrait] % A3, A4, A5, A6; landscape
 
 % Debugovani
@@ -41,7 +41,7 @@
 	rightmargin=10pt,
 %	color=darkgreen,
 %	style={\FSec}%
-	style={\switchtobodyfont[14pt]\bf},
+	style={\switchtobodyfont[13pt]\bf},
 	before={\vskip -1mm},
 %	after=\nowhitespace,
 ]
@@ -89,62 +89,39 @@
 
 \input header.ctex % TITLE
 
-%\section{GNU/Linux developer and consultant}
-
-%Quality-driven professional and enthusiast with extensive experience in the
-%open-source and enterprise IT industry. Proficient technical background in
-%GNU/Linux system engineering and administration seeking entry into low-level,
-%embedded development and hardware design. Organized and detail-oriented; with
-%strong analytical skills. Energetic and hardworking; able to work well under
-%pressure.
-
-%Quality-driven professional and enthusiast with extensive experience in the
-%open-source and enterprise IT industry. 
-
-
-%Proficient technical background in
-%GNU/Linux, Unix in R\&D environments for the storage, computer system,
-%government and telecom industries. Organized and detail-oriented; with strong
-%analytical skills. Energetic and hardworking; able to work well under pressure.
-
-%Ready to relocate with an ongoing application for Canadian Permanent Residency.
-
-%Willing to travel and relocate as necessary.
-%expertise in troubleshoot 
-%Uses technology to increase productivity
-%Keeps technical skills up to date
-%Completed Master's degree 
-%Proven skills
-
 \section{Highlights of Qualifications}
-
-\placefigure[right,none]{none}{\externalfigure[logos/tux.svg][height=2.5cm]}
 
 \startitemize[joinedup]
 \item Over 15 years experience in Linux and UNIX system development and administration for critical environments.
-\item Proficient in bash, Python, C and perl.
 \item Linux user-space programming and POSIX interface knowledge. 
 \item Experienced Agile development team member.
-\item Proficient knowledge of storage, networking, virtualization and cloud principles.
-\item Over 7 years experience in multicultural and distributed teams.
+\item Over 8 years experience in multicultural and distributed teams.
 \item Organized and detail-oriented; with strong analytical skills. 
 \item Energetic team worker with good communication skills. 
 \stopitemize
 
+%\vskip -15mm
+
 \section{Areas of Expertise Include}
 
-%\startitemize[columns,three,joinedup]
+\placefigure[right,none]{none}{\externalfigure[logos/tux.svg][height=2.5cm]}
+
+%\startitemize[joinedup,columns,two]
 \startitemize[joinedup]
-\item {\bf Programming:} bash, Python, perl, PHP, ANSI C/C99/intermediate C++ (GCC chain).
-\item {\bf Favourite IDE:} {\tt vim} + {\tt Makefile} + {\tt git}.
-\item {\bf Extensive debugging and profiling:} {\tt gdb}, Valgrind, {\tt strace}, {\tt gprof}.
-\item {\bf Typography and graphics:} \CONTEXT, \LaTeX, \METAPOST, GIMP, Inkscape.
-\item {\bf Web:} HTML5, CSS3, intermediate JavaScript.
-%\item {\bf Scientific software:} MATLAB, Octave, gnuplot, NumPy.
-%\item {\bf Scientific software:} MATLAB, Octave, GNU Radio, gnuplot, NumPy.
-%\item {\bf Hardware:} Xilinx FPGA (Spartan), VHDL, ATMEL AVR, ARM, embedded Linux, x86 SSE asm.
-%\item {\bf Electronics:} PCB soldering and debugging, oscilloscope and logic analyzer usage.
-%\item {\bf 3D Printing:} operating printer and prototype design in FreeCAD.
+\item {\bf Programming languages:} GCC chain, ANSI C/C99, C++ (intermediate)
+\item {\bf Scripting languages:} shell-scripting, bash, Python, perl, PHP, JavaScript, Ruby, sed, AWK
+\item {\bf GNU/Linux and Unix administration:} CentOS/RHEL 5/6/7, Fedora, Debian, HP-UX, Darwin (OS X)
+\item {\bf Cloud:} Amazon Web Services, OpenStack
+\item {\bf Virtualization and container services:} VMware, VirtualBox, Docker, HPVM
+\item {\bf Security:} SELinux, Metasploit, TrueCrypt; HIPPA, PCI compliance
+\item {\bf Database services:} PostgreSQL, MySQL, MongoDB, Oracle
+\item {\bf Configuration and build tools:} Chef, Maven, Jenkins, Makefile, cmake, RPM, rpmbuild
+\item {\bf Version control:} git, CVS, github, Bitbucket, JIRA
+\item {\bf Monitoring tools:} collectd + InfluxDB + Grafana, logstash + ElasticSearch
+\item {\bf Network administration:} routing, iptables/firewalld, SSH, Apache, Nginx, Tomcat, DNS, FTP, CIFS, NFS, Squid, OpenVPN
+\item {\bf Network monitoring and troubleshooting:}  tcpdump, nmap, netcat, WireShark
+\item {\bf Web frontend:} HTML5, CSS3, PHP, JavaScript
+\item {\bf Data representation and APIs:} XML, JSON; REST, SOAP
 \stopitemize
 
 %\vskip -5mm
@@ -271,7 +248,7 @@
 
 \startitemize
 \item New project to deliver Linux related tutorial and cheat sheets to the community.
-\item Current published materials include cheat sheets for bash, ViM and Python.
+\item Current published materials include cheat sheets for bash, ViM, Python and networking.
 \stopitemize
 
 \blank
