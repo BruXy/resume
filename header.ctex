@@ -2,6 +2,7 @@
 \useURL[linkedin][http://www.linkedin.com/in/bruxy]
 \useURL[mail][mail:bruxy@regnet.cz][][bruxy@regnet.cz]
 \useURL[secmail][mail:bruchy@gmail.com][][bruchy@gmail.com]
+\useURL[github][https://github.com/BruXy]
 
 \definecolor[card][r=0.9,g=0.9,b=0.9]
 
@@ -9,18 +10,19 @@
 \startcombination[2]
 {\framed[width=10cm,top=\vss,bottom=\vss]{%
 {\switchtobodyfont[24pt]\bf Martin Bruchanov}
-\blank[3mm]\hairline\blank[.5mm]
-{\tfa\sc GNU/Linux Systems Engineer}
+\blank[3mm]\hairline\blank[.25mm]
+{\tfa\sc Senior GNU/Linux Developer and DevOps Engineer}
 }}{}
 {\framed[width=9.5cm,align=flushleft,
 	style=\tfx,top=\vss,bottom=\vss,background=color,backgroundcolor=card,
 	offset=5pt]{%
 {%\tfx
-{\bf Current address:} \dotfill{} Halifax B3N\,2P7, Nova Scotia \\ 
+{\bf Current address:} \dotfill{} Halifax, Nova Scotia \\ 
 {\bf Home page:} \dotfill{} \from[homepage]    \\
 {\bf Email:} \dotfill{} {\tt \from[secmail]} \\
 {\bf Linkedin:} \dotfill{} \from[linkedin]     \\
-{\bf Mobile:} \dotfill{} 902-476-2756    \\
+{\bf GitHub:} \dotfill{} \from[github] \\
+{\bf Mobile:} \dotfill{} (+1)\,902-476-2756    \\
 }}}{}
 \stopcombination
 

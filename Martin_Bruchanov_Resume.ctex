@@ -40,10 +40,9 @@
 	margin=-4pt,
 	rightmargin=10pt,
 %	color=darkgreen,
-%	style={\FSec}%
 	style={\switchtobodyfont[13pt]\bf},
-	before={\vskip -1mm},
-%	after=\nowhitespace,
+	before={\vskip 0mm},
+	after=\nowhitespace,
 ]
 
 \setupitemize[each][joinedup][leftmargin=0em]
@@ -95,7 +94,7 @@
 \item Over 15 years experience in Linux and UNIX system development and administration for critical environments.
 \item Linux user-space programming and POSIX interface knowledge. 
 \item Experienced Agile development team member.
-\item Over 8 years experience in multicultural and distributed teams.
+\item Over 9 years experience in multicultural and distributed teams.
 \item Organized and detail-oriented; with strong analytical skills. 
 \item Energetic team worker with good communication skills. 
 \stopitemize
@@ -117,9 +116,10 @@
 \item {\bf Database services:} PostgreSQL, MySQL, MongoDB, Oracle
 \item {\bf Configuration and build tools:} Chef, Maven, Jenkins, Makefile, cmake, RPM, rpmbuild
 \item {\bf Version control:} git, CVS, github, Bitbucket, JIRA
-\item {\bf Monitoring tools:} collectd + InfluxDB + Grafana, logstash + ElasticSearch
+\item {\bf Monitoring tools:} collectd + InfluxDB + Grafana, logstash + ElasticSearch, Datadog, PaperTrail
 \item {\bf Network administration:} routing, iptables/firewalld, SSH, Apache, Nginx, Tomcat, DNS, FTP, CIFS, NFS, Squid, OpenVPN
 \item {\bf Network monitoring and troubleshooting:}  tcpdump, nmap, netcat, WireShark
+\item {\bf Graphics and typesetting:} GIMP, Inkscape, \CONTEXT{}, \LaTeX{}, \MetaPost{}, \MetaFun{}
 \item {\bf Web frontend:} HTML5, CSS3, PHP, JavaScript
 \item {\bf Data representation and APIs:} XML, JSON; REST, SOAP
 \stopitemize
@@ -141,27 +141,52 @@
 	\stopcombination
 }
 
+\Employment{Analyze Re Inc. -- Halifax, Nova Scotia}
+	{Technical Operations Engineer}
+	{03/2017~-- present}
+
+\placefigure[right,none]{none}{\externalfigure[logos/analyze_re.eps][width=4cm]}
+
+\startitemize
+\item Deployment and monitoring of fault-tolerant and distributed systems.
+\item Manage and maintain customer-specific deployment configuration.
+\item Continuous automation of deployment processes and monitoring, using tools such as Papertrail, PagerDuty, Datadog, etc.
+\stopitemize
+
+\blank
+
 \Employment{Athletigen Technologies Inc. -- Halifax, Nova Scotia}
 	{DevOps Engineer}
-	{10/2015~-- present}
+	{10/2015~-- 03/2017}
 
 \placefigure[right,none]{none}{\externalfigure[logos/athletigen.pdf][width=4cm]}
 
 \startitemize
 \item Administration of Amazon Web Services (AWS) cloud environment.
-\item HIPPA compliant environment.
-\item Site reliability engineering for Athletigen web, Tomcat, Apache, Nginx troubleshooting.
+\item AWS utilities development with bash, Ruby and Python (with boto3 API).
+\item HIPPA compliant environment, security management and auditing with Security Monkey.
+\item Site reliability engineering for Athletigen web; Tomcat, Apache, Nginx troubleshooting.
 \item Container virtualization with Docker.
-\item AWS utilities development with bash and Python (boto3).
 \item Management of OpsWorks configuration with Chef recipes and ruby.
-\item Metric collection with {\tt collectd}, InfluxDB and Grafana.
-\item Network environment and OpenVPN configuration.
+\item Metric collection with {\tt collectd}, InfluxDB and Grafana or CloudWatch.
+\item Network environment and OpenVPN configuration and administration.
 \stopitemize
 
 \blank
 
+%\Employment{Freelancing -- Halifax, Nova Scotia}
+%	{Remote GNU/Linux Consultant}
+%	{10/2015~-- present}
+%
+%\startitemize
+%\item Providing Linux services remotely.
+%\item Penetration testing and Linux hardening.
+%\stopitemize
+%
+%\blank
+
 \Employment{ZOOM International -- Prague, Czech Republic}%
-	{GNU/Linux System Engineer}%
+	{DevOps Engineer}%
 	{11/2012~-- 09/2015}
 
 \placefigure[right,none]{none}{\externalfigure[logos/ZOOM_logo_curves.pdf][width=4cm]}
@@ -239,8 +264,8 @@
 \Employment{GNU/Linux Guru}{\from[linuxguru]}{2014 -- present}
 
 \placefigure[right,none]{none}{
-\framed[width=4.4cm,frame=on,framecolor=darkgray,height=3.8cm,align=center]{
-\externalfigure[logos/housenka_title.png][width=4cm]
+\framed[width=4.4cm,frame=on,framecolor=darkgray,height=3.6cm,align=center]{
+\externalfigure[logos/housenka_title.png][width=3.75cm]
 \crlf
 {\ss\tfx Classic Snake game clone in bash. Featured on Hackaday.} 
 }

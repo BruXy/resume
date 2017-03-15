@@ -10,9 +10,15 @@ $(RESUME).txt: $(RESUME).pdf
 	sed -i.bak -e 's/ \.//g' -e '/Page [1-9].*/d' $(RESUME).txt 
 	sed -i.bak -e 's/\o14//g' -e '/^$$/N;/^\n$$/D' $(RESUME).txt 
 
-.PHONY: pdf txt
+.PHONY: pdf txt clean veryclean
 
 pdf: $(RESUME).pdf
 
 txt: $(RESUME).txt
+
+clean:
+	@rm -f $(RESUME).{tuc,log,txt.bak}
+
+veryclean: clean
+	@rm -f $(RESUME).{pdf,txt}
 
