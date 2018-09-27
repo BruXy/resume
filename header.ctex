@@ -6,12 +6,12 @@
 
 \definecolor[card][r=0.9,g=0.9,b=0.9]
 
-\setupframed[height=2.5cm,frame=off]
+\setupframed[height=3.0cm,frame=off]
 \startcombination[2]
 {\framed[width=10cm,top=\vss,bottom=\vss]{%
 {\switchtobodyfont[24pt]\bf Martin Bruchanov}
 \blank[3mm]\hairline\blank[.25mm]
-{\tfa\sc Senior GNU/Linux Developer and DevOps Engineer}
+{\tfa\sc Senior Cloud Architect and DevOps consultant}
 }}{}
 {\framed[width=9.5cm,align=flushleft,
 	style=\tfx,top=\vss,bottom=\vss,background=color,backgroundcolor=card,

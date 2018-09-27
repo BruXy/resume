@@ -3,7 +3,7 @@
 \enableregime[utf] % latin2
 \setupoutput[pdftex] % dvips, acrobat
 \pdfminorversion=4 % verze pdf
-\setupbodyfont[9.0pt]  %
+\setupbodyfont[11.0pt]  %
 \setuppapersize[letter, portrait] % A3, A4, A5, A6; landscape
 
 % Debugovani
@@ -40,9 +40,9 @@
 	margin=-4pt,
 	rightmargin=10pt,
 %	color=darkgreen,
-	style={\switchtobodyfont[13pt]\bf},
-	before={\vskip 0mm},
-	after=\nowhitespace,
+	style={\switchtobodyfont[14pt]\bf},
+	before={\vskip 5mm},
+%	after=\nowhitespace,
 ]
 
 \setupitemize[each][joinedup][leftmargin=0em]
@@ -92,11 +92,11 @@
 
 \startitemize[joinedup]
 \item Over 15 years experience in Linux and UNIX system development and administration for critical environments.
-\item Linux user-space programming and POSIX interface knowledge. 
+\item Linux user-space programming and POSIX interface knowledge.
 \item Experienced Agile development team member.
-\item Over 9 years experience in multicultural and distributed teams.
-\item Organized and detail-oriented; with strong analytical skills. 
-\item Energetic team worker with good communication skills. 
+\item Over 10 years experience in multicultural and distributed teams.
+\item Organized and detail-oriented; with strong analytical skills.
+\item Energetic team worker with good communication skills.
 \stopitemize
 
 %\vskip -15mm
@@ -109,19 +109,20 @@
 \startitemize[joinedup]
 \item {\bf Programming languages:} GCC chain, ANSI C/C99, C++ (intermediate)
 \item {\bf Scripting languages:} shell-scripting, bash, Python, perl, PHP, JavaScript, Ruby, sed, AWK
-\item {\bf GNU/Linux and Unix administration:} CentOS/RHEL 5/6/7, Fedora, Debian, HP-UX, Darwin (OS X)
-\item {\bf Cloud:} Amazon Web Services, OpenStack
+\item {\bf GNU/Linux and Unix administration:} CentOS/RHEL 5/6/7, Fedora, Ubuntu, HP-UX, Darwin (OS X)
+\item {\bf Cloud:} Amazon Web Services (AWS), OpenStack, VMware vCloud Director
+\item {\bf Configuration Managment:} Salt-stack, Chef + AWS OpsWorks, Vagrant
 \item {\bf Virtualization and container services:} VMware, VirtualBox, Docker, HPVM
 \item {\bf Security:} SELinux, Metasploit, TrueCrypt; HIPPA, PCI compliance
 \item {\bf Database services:} PostgreSQL, MySQL, MongoDB, Oracle
-\item {\bf Configuration and build tools:} Chef, Maven, Jenkins, Makefile, cmake, RPM, rpmbuild
-\item {\bf Version control:} git, CVS, github, Bitbucket, JIRA
+\item {\bf Build tools:} Maven, Jenkins, Makefile, cmake, RPM/rpmbuild
+\item {\bf Version control:} git, Perforce, CVS, github, Bitbucket, JIRA
 \item {\bf Monitoring tools:} collectd + InfluxDB + Grafana, logstash + ElasticSearch, Datadog, PaperTrail
 \item {\bf Network administration:} routing, iptables/firewalld, SSH, Apache, Nginx, Tomcat, DNS, FTP, CIFS, NFS, Squid, OpenVPN
 \item {\bf Network monitoring and troubleshooting:}  tcpdump, nmap, netcat, WireShark
 \item {\bf Graphics and typesetting:} GIMP, Inkscape, \CONTEXT{}, \LaTeX{}, \MetaPost{}, \MetaFun{}
-\item {\bf Web frontend:} HTML5, CSS3, PHP, JavaScript
-\item {\bf Data representation and APIs:} XML, JSON; REST, SOAP
+\item {\bf Web frontend:} HTML5, CSS3, PHP, JavaScript (basic)
+\item {\bf Data representation and APIs:} XML, JSON, YAML; REST, SOAP
 \stopitemize
 
 %\vskip -5mm
@@ -148,9 +149,27 @@
 \placefigure[right,none]{none}{\externalfigure[logos/analyze_re.eps][width=4cm]}
 
 \startitemize
-\item Deployment and monitoring of fault-tolerant and distributed systems.
-\item Manage and maintain customer-specific deployment configuration.
-\item Continuous automation of deployment processes and monitoring, using tools such as Papertrail, PagerDuty, Datadog, etc.
+\item Administration of computational environment in AWS.
+\item Automation tools development with bash, Python and Ruby.
+\item Container virtualization with Docker and Docker Swarm.
+\item Configuration management with Salt-stack and Jinja2 templates.
+\item Continuous deployment and monitoring of fault-tolerant and distributed systems. Using tools such as Papertrail, PagerDuty, Datadog, etc.
+\item Managing and maintaining customer-specific deployment configuration.
+\stopitemize
+
+\blank
+
+\Employment{2TheTeam LLC -- New York, USA (remote consulting)}
+	{Cloud Solution Architect}
+	{02/2017~-- present}
+
+\placefigure[right,none]{none}{\externalfigure[logos/2theteam_logo.png][width=4cm]}
+
+\startitemize
+\item Creation of AWS infrastructure for web-based application: load balancing and support for continuous deployment.
+\item Configuration management with OpsWorks, Chef and Ruby, Python automation tools.
+\item Implementation of monitoring and log consolidation with CloudWatch.
+\item Infrastructure and Linux operating system security and hardening.
 \stopitemize
 
 \blank
@@ -186,7 +205,7 @@
 %\blank
 
 \Employment{ZOOM International -- Prague, Czech Republic}%
-	{DevOps Engineer}%
+	{GNU/Linux Systems Engineer}%
 	{11/2012~-- 09/2015}
 
 \placefigure[right,none]{none}{\externalfigure[logos/ZOOM_logo_curves.pdf][width=4cm]}
