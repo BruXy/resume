@@ -1,14 +1,14 @@
 \mainlanguage[en]
-\language[en] 
+\language[en]
 \enableregime[utf] % latin2
 \setupoutput[pdftex] % dvips, acrobat
-\pdfminorversion=4 % verze pdf
+\pdfvariable minorversion 4 % verze pdf
 \setupbodyfont[11.0pt]  %
 \setuppapersize[letter, portrait] % A3, A4, A5, A6; landscape
 
 % Debugovani
 %\showframe % ukaze nastaveni vzhledu stranky
-%\showgrid   
+%\showgrid
 
 \setupbodyfontenvironment[default][em=italic]
 
@@ -18,31 +18,31 @@
 %%% Section desing %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \define[2]\CVSection{
-	\framedtext[
-%		width=\overlaywidth,
-%		width=\textwidth,
-		framecolor=darkred,
-		color=darkred,
-		width=\makeupwidth,
-%		height=6\bodyfontsize,
-		offset=2pt,
-%		leftframe=on,
-		bottomframe=on,
-%		background={SectionDeco},
-		align=flushleft, % flushright
-		frame=off,
+    \framedtext[
+%        width=\overlaywidth,
+%        width=\textwidth,
+        framecolor=darkred,
+        color=darkred,
+        width=\makeupwidth,
+%        height=6\bodyfontsize,
+        offset=2pt,
+%        leftframe=on,
+        bottomframe=on,
+%        background={SectionDeco},
+        align=flushleft, % flushright
+        frame=off,
         strut=no,
-	]{#2}
+    ]{#2}
 }
 
 \setuphead[section][
-	command=\CVSection,
-	margin=-4pt,
-	rightmargin=10pt,
-%	color=darkgreen,
-	style={\switchtobodyfont[14pt]\bf},
-	before={\vskip 5mm},
-%	after=\nowhitespace,
+    command=\CVSection,
+    margin=-4pt,
+    rightmargin=10pt,
+%    color=darkgreen,
+    style={\switchtobodyfont[14pt]\bf},
+    before={\vskip 5mm},
+%    after=\nowhitespace,
 ]
 
 \setupitemize[each][joinedup][leftmargin=0em]
@@ -51,17 +51,17 @@
 %letter 215.9 x 279.4
 
 \setuplayout
-	[width=200mm,
-	height=268mm,
-	backspace=8mm,
-	topspace=5mm,
-	top=0mm,
-	header=5mm,
-	footer=8mm,
-	bottom=3mm,
-	margin=20mm,
-	rightedgedistance=15mm,
-	rightedge=70mm]
+    [width=200mm,
+    height=268mm,
+    backspace=8mm,
+    topspace=5mm,
+    top=0mm,
+    header=5mm,
+    footer=8mm,
+    bottom=3mm,
+    margin=20mm,
+    rightedgedistance=15mm,
+    rightedge=70mm]
 
 \setuppagenumbering[location=]
 \setupfootertexts[{\sc Page \currentpage{} of \lastpage}]
@@ -91,10 +91,9 @@
 \section{Highlights of Qualifications}
 
 \startitemize[joinedup]
-\item Over 15 years experience in Linux and UNIX system development and administration for critical environments.
-\item Linux user-space programming and POSIX interface knowledge.
-\item Experienced Agile development team member.
-\item Over 10 years experience in multicultural and distributed teams.
+\item 20 years experience in Linux and UNIX system development and administration for critical environments.
+\item Experienced cloud systems, architecture, security and development operations leader
+\item Over 12 years experience in multicultural and distributed teams.
 \item Organized and detail-oriented; with strong analytical skills.
 \item Energetic team worker with good communication skills.
 \stopitemize
@@ -109,11 +108,11 @@
 \startitemize[joinedup]
 \item {\bf Programming languages:} GCC chain, ANSI C/C99, C++ (intermediate)
 \item {\bf Scripting languages:} shell-scripting, bash, Python, perl, PHP, JavaScript, Ruby, sed, AWK
-\item {\bf GNU/Linux and Unix administration:} CentOS/RHEL 5/6/7, Fedora, Ubuntu, HP-UX, Darwin (OS X)
+\item {\bf GNU/Linux and Unix administration:} CentOS/RHEL 5/6/7, Fedora, Ubuntu, HP-UX, Darwin (OS X), Fuzix OS
 \item {\bf Cloud:} Amazon Web Services (AWS), OpenStack, VMware vCloud Director
 \item {\bf Configuration Managment:} Salt-stack, Chef + AWS OpsWorks, Vagrant
 \item {\bf Virtualization and container services:} VMware, VirtualBox, Docker, HPVM
-\item {\bf Security:} SELinux, Metasploit, TrueCrypt; HIPPA, PCI compliance
+\item {\bf Security:} SELinux, Metasploit, Nessus, TrueCrypt; HIPPA, PCI compliance
 \item {\bf Database services:} PostgreSQL, MySQL, MongoDB, Oracle
 \item {\bf Build tools:} Maven, Jenkins, Makefile, cmake, RPM/rpmbuild
 \item {\bf Version control:} git, Perforce, CVS, github, Bitbucket, JIRA
@@ -130,72 +129,74 @@
 \section{Professional Experience}
 
 \define[3]\Employment{
-	\setupframed[height=1cm,frame=off]
-	\startcombination[2]
-		{\framed[width=14.5cm,top=\vss,bottom=\vss,align=right]{%
-		{\bfa #1}\\
-		{\sc #2}
-		}}{}
-		{\framed[width=5cm,align=flushright,top=\vss,bottom=\vss]{%
-		{\bf #3}
-		}}{}
-	\stopcombination
+    \setupframed[height=1cm,frame=off]
+    \startcombination[2]
+        {\framed[width=14.5cm,top=\vss,bottom=\vss,align=right]{%
+        {\bfa #1}\\
+        {\sc #2}
+        }}{}
+        {\framed[width=5cm,align=flushright,top=\vss,bottom=\vss]{%
+        {\bf #3}
+        }}{}
+    \stopcombination
 }
 
 \Employment{Analyze Re Inc. -- Halifax, Nova Scotia}
-	{Technical Operations Engineer}
-	{03/2017~-- present}
+    {Technical Operations Engineer}
+    {03/2017~-- present}
 
 \placefigure[right,none]{none}{\externalfigure[logos/analyze_re.eps][width=4cm]}
 
 \startitemize
-\item Administration of computational environment in AWS.
+\item Ownership of computational environment in AWS.
+\item Cloud infrastructure, security and site reliability lead.
 \item Automation tools development with bash, Python and Ruby.
 \item Container virtualization with Docker and Docker Swarm.
 \item Configuration management with Salt-stack and Jinja2 templates.
 \item Continuous deployment and monitoring of fault-tolerant and distributed systems. Using tools such as Papertrail, PagerDuty, Datadog, etc.
-\item Managing and maintaining customer-specific deployment configuration.
+\item Managing and maintaining customer-specific application configuration.
+\item Leadership of change and release management.
 \stopitemize
 
 \blank
 
 \Employment{2TheTeam LLC -- New York, USA (remote consulting)}
-	{Cloud Solution Architect}
-	{02/2017~-- present}
+    {Cloud Solution Architect}
+    {02/2017~-- 08/2019}
 
 \placefigure[right,none]{none}{\externalfigure[logos/2theteam_logo.png][width=4cm]}
 
 \startitemize
-\item Creation of AWS infrastructure for web-based application: load balancing and support for continuous deployment.
-\item Configuration management with OpsWorks, Chef and Ruby, Python automation tools.
-\item Implementation of monitoring and log consolidation with CloudWatch.
-\item Infrastructure and Linux operating system security and hardening.
+\item Designed architecture of AWS infrastructure for web-based application: load balancing and support for continuous deployment.
+\item Developed configuration management with OpsWorks, Chef and Ruby, Python automation tools.
+\item Implemented monitoring and log consolidation with CloudWatch.
+\item Implemented infrastructure and operating system security and hardening.
 \stopitemize
 
 \blank
 
 \Employment{Athletigen Technologies Inc. -- Halifax, Nova Scotia}
-	{DevOps Engineer}
-	{10/2015~-- 03/2017}
+    {DevOps Engineer}
+    {10/2015~-- 03/2017}
 
 \placefigure[right,none]{none}{\externalfigure[logos/athletigen.pdf][width=4cm]}
 
 \startitemize
-\item Administration of Amazon Web Services (AWS) cloud environment.
-\item AWS utilities development with bash, Ruby and Python (with boto3 API).
-\item HIPPA compliant environment, security management and auditing with Security Monkey.
-\item Site reliability engineering for Athletigen web; Tomcat, Apache, Nginx troubleshooting.
-\item Container virtualization with Docker.
-\item Management of OpsWorks configuration with Chef recipes and ruby.
-\item Metric collection with {\tt collectd}, InfluxDB and Grafana or CloudWatch.
-\item Network environment and OpenVPN configuration and administration.
+\item Administered Amazon Web Services (AWS) cloud environment.
+\item Developed AWS utilities with bash, Ruby and Python (with boto3 API).
+\item Maintained HIPPA compliant environment, security management and auditing with Security Monkey.
+\item Owned site reliability engineering for Athletigen web; Tomcat, Apache, Nginx troubleshooting.
+\item Implemented container virtualization with Docker.
+\item Managed of OpsWorks configuration with Chef recipes and ruby.
+\item Integrated metrics collection with {\tt collectd}, InfluxDB and Grafana or CloudWatch.
+\item Implemented network environment and OpenVPN configuration and administration.
 \stopitemize
 
 \blank
 
 %\Employment{Freelancing -- Halifax, Nova Scotia}
-%	{Remote GNU/Linux Consultant}
-%	{10/2015~-- present}
+%    {Remote GNU/Linux Consultant}
+%    {10/2015~-- present}
 %
 %\startitemize
 %\item Providing Linux services remotely.
@@ -205,8 +206,8 @@
 %\blank
 
 \Employment{ZOOM International -- Prague, Czech Republic}%
-	{GNU/Linux Systems Engineer}%
-	{11/2012~-- 09/2015}
+    {GNU/Linux Systems Engineer}%
+    {11/2012~-- 09/2015}
 
 \placefigure[right,none]{none}{\externalfigure[logos/ZOOM_logo_curves.pdf][width=4cm]}
 
@@ -222,8 +223,8 @@
 \blank
 
 \Employment{HEWLETT-PACKARD -- Prague, Czech Republic}%
-	{ITO Service Delivery Consultant}
-	{10/2008 -- 10/2012}
+    {ITO Service Delivery Consultant}
+    {10/2008 -- 10/2012}
 
 \placefigure[right,none]{none}{\externalfigure[logos/HP_New_Logo_2D.pdf][width=2cm]}
 
@@ -239,38 +240,38 @@
 \blank
 
 \Employment{RACOM  -- Nové Město na Moravě, Czech Republic}%
-	{Software Developer}%
-	{06/2000 -- 09/2002}
+    {Software Developer}%
+    {06/2000 -- 09/2002}
 
 \placefigure[right,none]{none}{\externalfigure[logos/racom.gif][width=4cm]}
 
 \startitemize
-\item Implemented company web platform in HTML, CSS, and PHP. 
-\item Assembled hardware and software installation for desktops and servers based on Linux and MS Windows. 
-\item Developed documentation system based on \LaTeX{}, Makefiles and CVS.  
-\item Created a software tool for the management of RACOM's wireless radio network, programmed in C, PHP, MySQL and Oracle databases. 
-\item Created technical documentation for RACOM's radio products, using \LaTeX{}, Makefiles and CVS. 
+\item Implemented company web platform in HTML, CSS, and PHP.
+\item Assembled hardware and software installation for desktops and servers based on Linux and MS Windows.
+\item Developed documentation system based on \LaTeX{}, Makefiles and CVS.
+\item Created a software tool for the management of RACOM's wireless radio network, programmed in C, PHP, MySQL and Oracle databases.
+\item Created technical documentation for RACOM's radio products, using \LaTeX{}, Makefiles and CVS.
 \item Developed shell scripts for Linux server administration.
 \stopitemize
 
 \section{Other Experience}
 
 \Employment{Silicon Hill -- Prague, Czech Republic}
-	{Project supervisor, software developer}{10/2002 -- Present}
+    {Project supervisor, software developer}{10/2002 -- Present}
 
 \placefigure[right,none]{none}{\externalfigure[logos/SH-logo-col.pdf][width=4cm]}
 
 \startitemize
-	\item Developed web platform for supervising card access, used PHP, MySQL, Apache, bash.
-	\item Built Meteosat reception station for EUMETCAST with web access and Meteosat imagery processing,
-	used C, x86 assembler with SSE, PHP.
-	\item GNU/Linux evangelist and propagator, member of organizing committee of {\em InstallFest} (Prague, CZ).
+    \item Developed web platform for supervising card access, used PHP, MySQL, Apache, bash.
+    \item Built Meteosat reception station for EUMETCAST with web access and Meteosat imagery processing,
+    used C, x86 assembler with SSE, PHP.
+    \item GNU/Linux evangelist and propagator, member of organizing committee of {\em InstallFest} (Prague, CZ).
 \stopitemize
 
 %\blank
 
 %\Employment{Czech Technical University -- Prague, Czech Republic}
-%    {Assistant teacher}{03/2007 -- 07/2007} 
+%    {Assistant teacher}{03/2007 -- 07/2007}
 %
 %\startitemize
 %\item Taught a lab course on {\em Peripherals devices}.
@@ -279,14 +280,14 @@
 
 \section{Personal Projects}
 
-\useURL[linuxguru][http://gnulinux.guru]
+\useURL[linuxguru][https://gnulinux.guru]
 \Employment{GNU/Linux Guru}{\from[linuxguru]}{2014 -- present}
 
 \placefigure[right,none]{none}{
 \framed[width=4.4cm,frame=on,framecolor=darkgray,height=3.6cm,align=center]{
 \externalfigure[logos/housenka_title.png][width=3.75cm]
 \crlf
-{\ss\tfx Classic Snake game clone in bash. Featured on Hackaday.} 
+{\ss\tfx Classic Snake game clone in bash. Featured on Hackaday.}
 }
 }
 
@@ -298,7 +299,7 @@
 \blank
 
 \Employment{Author}{Image Communication on Short Waves}{}
-\useURL[sstvhandbook][http://sstv-handbook.com]
+\useURL[sstvhandbook][https://sstv-handbook.com]
 
 \startitemize
 \item An e-book for ham radio operators and radio listeners interested in
@@ -320,22 +321,22 @@ ham radio and Meteosat reception.
 \section{Education}
 
 \startitemize
-	\placefigure[right,none]{none}{\externalfigure[logos/logocvut.pdf][width=1.5cm]}
-	\item {\bf Czech Technical University in Prague, Faculty of Electrical Engineering}\hfill{10/2002 -- 06/2008}	
-	\startitemize
-	\item Master's degree (Canadian equivalency evaluated by WES, ref. no. 2562464/ab).
-	\item Major/Specialization: Electrical Engineering and Computer Science.
-	\item Thesis: {\em Image processing of Meteosat data.}
-	\stopitemize
+    \placefigure[right,none]{none}{\externalfigure[logos/logocvut.pdf][width=1.5cm]}
+    \item {\bf Czech Technical University in Prague, Faculty of Electrical Engineering}\hfill{10/2002 -- 06/2008}
+    \startitemize
+    \item Master's degree (Canadian equivalency evaluated by WES, ref. no. 2562464/ab).
+    \item Major/Specialization: Electrical Engineering and Computer Science.
+    \item Thesis: {\em Image processing of Meteosat data.}
+    \stopitemize
 \stopitemize
 
 \startitemize
-	\item {\bf Technical secondary school {\em SPŠ a VOŠ Žďár nad Sázavou}}\hfill{09/1994 -- 06/1998}
-	\startitemize
-		\item Specialized in control systems and automation engineering.
-	\stopitemize
+    \item {\bf Technical secondary school {\em SPŠ a VOŠ Žďár nad Sázavou}}\hfill{09/1994 -- 06/1998}
+    \startitemize
+        \item Specialized in control systems and automation engineering.
+    \stopitemize
 \stopitemize
-	
+
 \section{Certifications}
 
 \startitemize
@@ -346,9 +347,9 @@ ham radio and Meteosat reception.
 \section{Languages}
 
 \startitemize
-	\item Czech, native language
-	\item English, full professional proficiency (IELTS overal band score 7.0)
-	\item Russian ({\switchtobodyfont[gentium]русский язык}), basic
+    \item Czech, native language
+    \item English, full professional proficiency (IELTS overal band score 7.0)
+    \item Russian ({\switchtobodyfont[gentium]русский язык}), basic
 \stopitemize
 
 \stoptext
