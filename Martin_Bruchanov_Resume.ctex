@@ -1,7 +1,6 @@
 \mainlanguage[en]
 \language[en]
 \enableregime[utf] % latin2
-\setupoutput[pdftex] % dvips, acrobat
 \pdfvariable minorversion 4 % verze pdf
 \setupbodyfont[11.0pt]  %
 \setuppapersize[letter, portrait] % A3, A4, A5, A6; landscape
@@ -79,6 +78,7 @@
     color=black,
     style=\tt]
 
+\setupexternalfigures[location=local,directory=.,conversion=pdf]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -92,7 +92,7 @@
 
 \startitemize[joinedup]
 \item 20 years experience in Linux and UNIX system development and administration for critical environments.
-\item Experienced cloud systems, architecture, security and development operations leader
+\item Experienced cloud systems, architecture, security and development operations leader.
 \item Over 12 years experience in multicultural and distributed teams.
 \item Organized and detail-oriented; with strong analytical skills.
 \item Energetic team worker with good communication skills.
@@ -106,19 +106,19 @@
 
 %\startitemize[joinedup,columns,two]
 \startitemize[joinedup]
-\item {\bf Programming languages:} GCC chain, ANSI C/C99, C++ (intermediate)
-\item {\bf Scripting languages:} shell-scripting, bash, Python, perl, PHP, JavaScript, Ruby, sed, AWK
-\item {\bf GNU/Linux and Unix administration:} CentOS/RHEL 5/6/7, Fedora, Ubuntu, HP-UX, Darwin (OS X), Fuzix OS
+\item {\bf Programming languages:} GCC chain, ANSI C/C99, C++ (intermediate), Go (beginner)
+\item {\bf Scripting languages:} shell/bash, Python, perl, PHP, JavaScript, Ruby, sed, AWK, lua (beg.)
+\item {\bf GNU/Linux and Unix administration:} CentOS/RedHat, Fedora, Ubuntu, HP-UX, Darwin (OS X), Fuzix OS
 \item {\bf Cloud:} Amazon Web Services (AWS), OpenStack, VMware vCloud Director
-\item {\bf Configuration Managment:} Salt-stack, Chef + AWS OpsWorks, Vagrant
-\item {\bf Virtualization and container services:} VMware, VirtualBox, Docker, HPVM
-\item {\bf Security:} SELinux, Metasploit, Nessus, TrueCrypt; HIPPA, PCI compliance
+\item {\bf Configuration Management:} Salt-stack, Chef + AWS OpsWorks, Vagrant, Terraform
+\item {\bf Virtualization and container services:} AWS ECS, VMware, VirtualBox, Docker, HPVM
+\item {\bf Security:} SELinux, Metasploit, Nessus; HIPPA, PCI compliance
 \item {\bf Database services:} PostgreSQL, MySQL, MongoDB, Oracle
 \item {\bf Build tools:} Maven, Jenkins, Makefile, cmake, RPM/rpmbuild
 \item {\bf Version control:} git, Perforce, CVS, github, Bitbucket, JIRA
-\item {\bf Monitoring tools:} collectd + InfluxDB + Grafana, logstash + ElasticSearch, Datadog, PaperTrail
+\item {\bf Monitoring tools:} CloudWatch, collectd + InfluxDB + Grafana, logstash + ElasticSearch, Datadog, PaperTrail
 \item {\bf Network administration:} routing, iptables/firewalld, SSH, Apache, Nginx, Tomcat, DNS, FTP, CIFS, NFS, Squid, OpenVPN
-\item {\bf Network monitoring and troubleshooting:}  tcpdump, nmap, netcat, WireShark
+\item {\bf Network monitoring and troubleshooting:}  tcpdump, nmap, netcat, WireShark; gdb, strace
 \item {\bf Graphics and typesetting:} GIMP, Inkscape, \CONTEXT{}, \LaTeX{}, \MetaPost{}, \MetaFun{}
 \item {\bf Web frontend:} HTML5, CSS3, PHP, JavaScript (basic)
 \item {\bf Data representation and APIs:} XML, JSON, YAML; REST, SOAP
@@ -148,14 +148,16 @@
 \placefigure[right,none]{none}{\externalfigure[logos/analyze_re.eps][width=4cm]}
 
 \startitemize
-\item Ownership of computational environment in AWS.
-\item Cloud infrastructure, security and site reliability lead.
-\item Automation tools development with bash, Python and Ruby.
-\item Container virtualization with Docker and Docker Swarm.
-\item Configuration management with Salt-stack and Jinja2 templates.
-\item Continuous deployment and monitoring of fault-tolerant and distributed systems. Using tools such as Papertrail, PagerDuty, Datadog, etc.
-\item Managing and maintaining customer-specific application configuration.
+\item Cloud infrastructure and site reliability lead.
+\item Managing and supervising team of TechOps engineers.
+\item Ownership of AWS computational environment (EC2, ECS, RDS, ELB, CloudWatch, WAF).
 \item Leadership of change and release management.
+\item Automation tools development with bash and Python.
+\item Analysis and implementation of cyber security requirements and policies.
+\item Container virtualization with Docker, Docker Swarm and AWS Elastic Container Service.
+\item Configuration management with Salt-stack and Jinja2 templates.
+\item Monitoring of fault-tolerant and distributed systems. Using tools such as Papertrail, PagerDuty, Datadog, etc.
+\item Managing and maintaining customer-specific application configuration.
 \stopitemize
 
 \blank
@@ -167,7 +169,7 @@
 \placefigure[right,none]{none}{\externalfigure[logos/2theteam_logo.png][width=4cm]}
 
 \startitemize
-\item Designed architecture of AWS infrastructure for web-based application: load balancing and support for continuous deployment.
+\item Designed AWS infrastructure architecture for web-based application: load balancing and support for continuous deployment.
 \item Developed configuration management with OpsWorks, Chef and Ruby, Python automation tools.
 \item Implemented monitoring and log consolidation with CloudWatch.
 \item Implemented infrastructure and operating system security and hardening.

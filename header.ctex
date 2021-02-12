@@ -11,13 +11,13 @@
 {\framed[width=10cm,top=\vss,bottom=\vss]{%
 {\switchtobodyfont[24pt]\bf Martin Bruchanov}
 \blank[3mm]\hairline\blank[.25mm]
-{\tfa\sc Senior Cloud Architect and DevOps consultant}
+{\tfa\sc Senior Cloud Architect and DevSecOps consultant}
 }}{}
 {\framed[width=9.5cm,align=flushleft,
 	style=\tfx,top=\vss,bottom=\vss,background=color,backgroundcolor=card,
 	offset=5pt]{%
 {%\tfx
-{\bf Current address:} \dotfill{} Halifax, Nova Scotia \\ 
+{\bf Current address:} \dotfill{} Halifax, Nova Scotia \\
 {\bf Home page:} \dotfill{} \from[homepage]    \\
 {\bf Email:} \dotfill{} {\tt \from[secmail]} \\
 {\bf Linkedin:} \dotfill{} \from[linkedin]     \\
