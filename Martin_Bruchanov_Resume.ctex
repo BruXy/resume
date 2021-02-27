@@ -142,7 +142,7 @@
 }
 
 \Employment{Analyze Re Inc. -- Halifax, Nova Scotia}
-    {Technical Operations Engineer}
+    {Technical Operations Leader}
     {03/2017~-- present}
 
 \placefigure[right,none]{none}{\externalfigure[logos/analyze_re.eps][width=4cm]}
@@ -150,7 +150,7 @@
 \startitemize
 \item Cloud infrastructure and site reliability lead.
 \item Managing and supervising team of TechOps engineers.
-\item Ownership of AWS computational environment (EC2, ECS, RDS, ELB, CloudWatch, WAF).
+\item Ownership of AWS computational environment (EC2, ECS, RDS, ELB, CloudWatch).
 \item Leadership of change and release management.
 \item Automation tools development with bash and Python.
 \item Analysis and implementation of cyber security requirements and policies.
@@ -342,8 +342,9 @@ ham radio and Meteosat reception.
 \section{Certifications}
 
 \startitemize
-\item {\bf HP0-P20: HP-UX 11i v3 System Administration}; Prometric, License TC0DUS501E, issued 2010.
+\item {\bf CLF-C01: AWS Certified Cloud Practitioner}; AWS, License W6L767HBJNQQ1GSJ, issued 2021.
 \item {\bf Red Hat Certified System Administrator}; Red Hat, License 150-126-340, issued 2015.
+\item {\bf HP0-P20: HP-UX 11i v3 System Administration}; Prometric, License TC0DUS501E, issued 2010.
 \stopitemize
 
 \section{Languages}
