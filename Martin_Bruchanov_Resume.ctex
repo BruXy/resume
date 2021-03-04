@@ -142,19 +142,19 @@
 }
 
 \Employment{Analyze Re Inc. -- Halifax, Nova Scotia}
-    {Technical Operations Leader}
+    {Senior Technical Operations Engineer}
     {03/2017~-- present}
 
 \placefigure[right,none]{none}{\externalfigure[logos/analyze_re.eps][width=4cm]}
 
 \startitemize
 \item Cloud infrastructure and site reliability lead.
-\item Managing and supervising team of TechOps engineers.
+\item Managing and supervising a team of TechOps engineers.
 \item Ownership of AWS computational environment (EC2, ECS, RDS, ELB, CloudWatch).
 \item Leadership of change and release management.
 \item Automation tools development with bash and Python.
 \item Analysis and implementation of cyber security requirements and policies.
-\item Container virtualization with Docker, Docker Swarm and AWS Elastic Container Service.
+\item Container virtualization with Docker, Docker Swarm, and AWS Elastic Container Service.
 \item Configuration management with Salt-stack and Jinja2 templates.
 \item Monitoring of fault-tolerant and distributed systems. Using tools such as Papertrail, PagerDuty, Datadog, etc.
 \item Managing and maintaining customer-specific application configuration.
