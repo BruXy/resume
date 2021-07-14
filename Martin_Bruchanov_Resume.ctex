@@ -109,7 +109,7 @@
 \item {\bf Programming languages:} GCC chain, ANSI C/C99, C++ (intermediate), Go (beginner)
 \item {\bf Scripting languages:} shell/bash, Python, perl, PHP, JavaScript, Ruby, sed, AWK, lua (beg.)
 \item {\bf GNU/Linux and Unix administration:} CentOS/RedHat, Fedora, Ubuntu, HP-UX, Darwin (OS X), Fuzix OS
-\item {\bf Cloud:} Amazon Web Services (AWS), OpenStack, VMware vCloud Director
+\item {\bf Cloud:} Amazon Web Services (AWS), OpenStack, VMware vCloud Director, Azure
 \item {\bf Configuration Management:} Salt-stack, Chef + AWS OpsWorks, Vagrant, Terraform
 \item {\bf Virtualization and container services:} AWS ECS, VMware, VirtualBox, Docker, HPVM
 \item {\bf Security:} SELinux, Metasploit, Nessus; HIPPA, PCI compliance
@@ -141,23 +141,39 @@
     \stopcombination
 }
 
+\Employment{Cisco Systems Inc. -- Halifax, Nova Scotia}
+    {Senior Site Reliability Engineer}
+    {07/2021~-- present}
+
+\placefigure[right,none]{none}{\externalfigure[logos/cisco.pdf][width=3cm]}
+
+\startitemize
+\item Administration of enterprise-grade AWS infrastructures.
+\item Managing infrastructure-as-code with Terraform and SaltStack.
+\item Developing support tools with Python.
+\item Linux systems administration.
+\item Managing services (Kubernetes/EKS) and application monitoring tools.
+\stopitemize
+
+\blank
+
 \Employment{Analyze Re Inc. -- Halifax, Nova Scotia}
     {Senior Technical Operations Engineer}
-    {03/2017~-- present}
+    {03/2017~-- 06/2021}
 
 \placefigure[right,none]{none}{\externalfigure[logos/analyze_re.eps][width=4cm]}
 
 \startitemize
 \item Cloud infrastructure and site reliability lead.
-\item Managing and supervising a team of TechOps engineers.
+\item Managed and supervised a team of TechOps engineers.
 \item Ownership of AWS computational environment (EC2, ECS, RDS, ELB, CloudWatch).
 \item Leadership of change and release management.
 \item Automation tools development with bash and Python.
-\item Analysis and implementation of cyber security requirements and policies.
+\item Analysed and implemented cybersecurity requirements and policies.
 \item Container virtualization with Docker, Docker Swarm, and AWS Elastic Container Service.
 \item Configuration management with Salt-stack and Jinja2 templates.
-\item Monitoring of fault-tolerant and distributed systems. Using tools such as Papertrail, PagerDuty, Datadog, etc.
-\item Managing and maintaining customer-specific application configuration.
+\item Monitored fault-tolerant and distributed systems. Using tools such as Papertrail, PagerDuty, Datadog, etc.
+\item Managed and maintained customer-specific application configuration.
 \stopitemize
 
 \blank
@@ -195,17 +211,6 @@
 \stopitemize
 
 \blank
-
-%\Employment{Freelancing -- Halifax, Nova Scotia}
-%    {Remote GNU/Linux Consultant}
-%    {10/2015~-- present}
-%
-%\startitemize
-%\item Providing Linux services remotely.
-%\item Penetration testing and Linux hardening.
-%\stopitemize
-%
-%\blank
 
 \Employment{ZOOM International -- Prague, Czech Republic}%
     {GNU/Linux Systems Engineer}%
@@ -259,7 +264,7 @@
 \section{Other Experience}
 
 \Employment{Silicon Hill -- Prague, Czech Republic}
-    {Project supervisor, software developer}{10/2002 -- Present}
+    {Project supervisor, software developer}{10/2002 -- 09/2015}
 
 \placefigure[right,none]{none}{\externalfigure[logos/SH-logo-col.pdf][width=4cm]}
 

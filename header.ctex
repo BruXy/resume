@@ -11,7 +11,7 @@
 {\framed[width=10cm,top=\vss,bottom=\vss]{%
 {\switchtobodyfont[24pt]\bf Martin Bruchanov}
 \blank[3mm]\hairline\blank[.25mm]
-{\tfa\sc Senior Cloud Architect and DevSecOps consultant}
+{\tfa\sc Senior Site Reliability Engineer}
 }}{}
 {\framed[width=9.5cm,align=flushleft,
 	style=\tfx,top=\vss,bottom=\vss,background=color,backgroundcolor=card,
