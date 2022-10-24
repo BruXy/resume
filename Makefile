@@ -1,4 +1,6 @@
 RESUME=Martin_Bruchanov_Resume
+PACKAGE=http://lmtx.pragma-ade.nl/install-lmtx/context-linux-64.zip
+DESTDIR=$$HOME/bin/context
 
 all: pdf txt
 
@@ -13,7 +15,7 @@ $(RESUME).txt: $(RESUME).pdf
 	# Remove ASCII linefeed control sequences
 	sed -i.bak -e 's/\o14//g' -e 's/\o12//g' $(RESUME).txt
 
-.PHONY: pdf txt clean veryclean
+.PHONY: pdf txt clean veryclean install
 
 pdf: $(RESUME).pdf
 
@@ -25,3 +27,10 @@ clean:
 veryclean: clean
 	@rm -f $(RESUME).{pdf,txt}
 
+install:
+	mkdir -p $(DESTDIR)
+	( cd $(DESTDIR) && \
+		wget $(PACKAGE) && \
+		unzip `basename $(PACKAGE)` && \
+		sh install.sh )
+	echo "export PATH=$(DESTDIR)/tex/texmf-linux-64/bin:\$$PATH" >> ~/.bashrc
