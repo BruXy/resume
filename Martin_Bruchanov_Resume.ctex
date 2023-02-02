@@ -2,7 +2,7 @@
 \language[en]
 \enableregime[utf] % latin2
 \pdfvariable minorversion 4 % verze pdf
-\setupbodyfont[11.0pt]  %
+\setupbodyfont[10.8pt]  %
 \setuppapersize[letter, portrait] % A3, A4, A5, A6; landscape
 
 % Debugovani
@@ -40,7 +40,7 @@
     rightmargin=10pt,
 %    color=darkgreen,
     style={\switchtobodyfont[14pt]\bf},
-    before={\vskip 5mm},
+    before={\vskip 1mm},
 %    after=\nowhitespace,
 ]
 
@@ -91,11 +91,12 @@
 \section{Highlights of Qualifications}
 
 \startitemize[joinedup]
-\item 20 years experience in Linux and UNIX system development and administration for critical environments.
+\item 20 years experience in Linux & UNIX system development and administration for critical and distributed environments.
 \item Experienced cloud systems, architecture, security and development operations leader.
-\item Over 12 years experience in multicultural and distributed teams.
+\item Experienced in working with multicultural, distributed, and remote teams.
 \item Organized and detail-oriented; with strong analytical skills.
 \item Energetic team worker with good communication skills.
+\item Canadian and Czech citizen with eligibility to work in the USA.
 \stopitemize
 
 %\vskip -15mm
@@ -108,19 +109,19 @@
 \startitemize[joinedup]
 \item {\bf Programming languages:} GCC chain, ANSI C/C99, C++ (intermediate), Go (beginner)
 \item {\bf Scripting languages:} shell/bash, Python, perl, PHP, JavaScript, Ruby, sed, AWK, lua (beg.)
-\item {\bf GNU/Linux and Unix administration:} CentOS/RedHat, Fedora, Ubuntu, HP-UX, Darwin (OS X), Fuzix OS
+\item {\bf GNU/Linux and Unix administration:} CentOS/RedHat, Fedora, Ubuntu, HP-UX
 \item {\bf Cloud:} Amazon Web Services (AWS), OpenStack, VMware vCloud Director, Azure
 \item {\bf Configuration Management:} Salt-stack, Chef + AWS OpsWorks, Vagrant, Terraform
-\item {\bf Virtualization and container services:} AWS ECS, VMware, VirtualBox, Docker, HPVM
+\item {\bf Virtualization and containers:} AWS ECS+EKS, VMware, VirtualBox, Docker, Kubernetes, HPVM
 \item {\bf Security:} SELinux, Metasploit, Nessus; HIPPA, PCI compliance
-\item {\bf Database services:} PostgreSQL, MySQL, MongoDB, Oracle
+\item {\bf Database and data storage services:} PostgreSQL, MySQL, MongoDB, Oracle, ElasticSearch
 \item {\bf Build tools:} Maven, Jenkins, Makefile, cmake, RPM/rpmbuild
-\item {\bf Version control:} git, Perforce, CVS, github, Bitbucket, JIRA
-\item {\bf Monitoring tools:} CloudWatch, collectd + InfluxDB + Grafana, logstash + ElasticSearch, Datadog, PaperTrail
+\item {\bf Version control:} git, Perforce, CVS, GitHub, Bitbucket, Jira
+\item {\bf Monitoring tools:} CloudWatch, collectd + InfluxDB + Grafana, ElasticSearch + logstash + Kibana, Datadog, PaperTrail
 \item {\bf Network administration:} routing, iptables/firewalld, SSH, Apache, Nginx, Tomcat, DNS, FTP, CIFS, NFS, Squid, OpenVPN
 \item {\bf Network monitoring and troubleshooting:}  tcpdump, nmap, netcat, WireShark; gdb, strace
 \item {\bf Graphics and typesetting:} GIMP, Inkscape, \CONTEXT{}, \LaTeX{}, \MetaPost{}, \MetaFun{}
-\item {\bf Web frontend:} HTML5, CSS3, PHP, JavaScript (basic)
+\item {\bf Web development:} HTML5, CSS3, PHP, JavaScript (basic)
 \item {\bf Data representation and APIs:} XML, JSON, YAML; REST, SOAP
 \stopitemize
 
@@ -141,18 +142,19 @@
     \stopcombination
 }
 
-\Employment{Cisco Systems Inc. -- Halifax, Nova Scotia}
+\Employment{Cisco Systems Inc. -- Remote}
     {Senior Site Reliability Engineer}
     {07/2021~-- present}
 
 \placefigure[right,none]{none}{\externalfigure[logos/cisco.pdf][width=3cm]}
 
 \startitemize
-\item Administration of enterprise-grade AWS infrastructures.
-\item Managing infrastructure-as-code with Terraform and SaltStack.
-\item Developing support tools with Python.
-\item Linux systems administration.
-\item Managing services (Kubernetes/EKS) and application monitoring tools.
+\item Managing a distributed and highly available infrastructure for a flagship cybersecurity product.
+\item Orchestrating AWS infra with Hashicorp stack (Packer, Terraform, Nomad, Consul, Vault) and Kubernetes.
+\item Administration of several ElasticSearch clusters for data storage and log consolidation (ELK).
+\item Developing automation scripts in bash and Python for monitoring tools and systems integration.
+\item Operating and performing troubleshooting of orchestration, configuration, and deployment and build tools (SaltStack, Jenkins).
+\item Supporting day-to-day operations for the Linux and AWS cloud environment along with participation in on-call rotation.
 \stopitemize
 
 \blank
@@ -250,7 +252,7 @@
     {Software Developer}%
     {06/2000 -- 09/2002}
 
-\placefigure[right,none]{none}{\externalfigure[logos/racom.gif][width=4cm]}
+\placefigure[right,none]{none}{\externalfigure[logos/racom.pdf][width=4cm]}
 
 \startitemize
 \item Implemented company web platform in HTML, CSS, and PHP.
