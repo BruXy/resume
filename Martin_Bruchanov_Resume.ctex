@@ -90,39 +90,36 @@
 
 \section{Highlights of Qualifications}
 
-\startitemize[joinedup]
-\item 20 years experience in Linux & UNIX system development and administration for critical and distributed environments.
-\item Experienced cloud systems, architecture, security and development operations leader.
-\item Experienced in working with multicultural, distributed, and remote teams.
-\item Organized and detail-oriented; with strong analytical skills.
-\item Energetic team worker with good communication skills.
-\item Canadian and Czech citizen with eligibility to work in the USA.
-\stopitemize
+Experienced Site Reliability Engineer with 20+ years in Linux and UNIX system
+development and administration for critical environments. Proven track record
+in cloud systems, architecture, cybersecurity, and DevOps leadership. Skilled
+in managing highly available infrastructure and orchestrating cloud
+environments.
 
-%\vskip -15mm
+%\vskip -35mm
 
 \section{Areas of Expertise Include}
 
-\placefigure[right,none]{none}{\externalfigure[logos/tux.svg][height=2.5cm]}
+\placefigure[right,none]{none}{\externalfigure[logos/tux.svg][height=2.25cm]}
 
 %\startitemize[joinedup,columns,two]
 \startitemize[joinedup]
-\item {\bf Programming languages:} GCC chain, ANSI C/C99, C++ (intermediate), Go (beginner)
-\item {\bf Scripting languages:} shell/bash, Python, perl, PHP, JavaScript, Ruby, sed, AWK, lua (beg.)
-\item {\bf GNU/Linux and Unix administration:} CentOS/RedHat, Fedora, Ubuntu, HP-UX
-\item {\bf Cloud:} Amazon Web Services (AWS), OpenStack, VMware vCloud Director, Azure
-\item {\bf Configuration Management:} Salt-stack, Chef + AWS OpsWorks, Vagrant, Terraform
-\item {\bf Virtualization and containers:} AWS ECS+EKS, VMware, VirtualBox, Docker, Kubernetes, HPVM
+\item {\bf Programming languages:} Python, Shell/Bash, C/C++, PHP, JavaScript, Ruby, AWK, Lua, Golang
+\item {\bf Cloud Platforms:} AWS, Azure, Google Cloud Platform (GCP), OpenStack
+\item {\bf GNU/Linux Administration:} CentOS/RedHat/Fedora, Ubuntu, Amazon Linux; HP-UX
+\item {\bf Configuration Management:} SaltStack, Chef, Terraform, Ansible, Vagrant
+\item {\bf Containerization & Virtualization:} Docker, Kubernetes, AWS ECS, Nomad, VMware, VirtualBox
+\item {\bf Monitoring & Logging:} CloudWatch, ELK stack, Datadog, PaperTrail, collectd, InfluxDB, Grafana
+\item {\bf Database services:} PostgreSQL, MySQL, MongoDB, Oracle, Elastic Cloud
+\item {\bf Data analytics:} BigQuery, Elasticsearch
 \item {\bf Security:} SELinux, Metasploit, Nessus; HIPPA, PCI compliance
-\item {\bf Database and data storage services:} PostgreSQL, MySQL, MongoDB, Oracle, ElasticSearch
-\item {\bf Build tools:} Maven, Jenkins, Makefile, cmake, RPM/rpmbuild
-\item {\bf Version control:} git, Perforce, CVS, GitHub, Bitbucket, Jira
-\item {\bf Monitoring tools:} CloudWatch, collectd + InfluxDB + Grafana, ElasticSearch + logstash + Kibana, Datadog, PaperTrail
-\item {\bf Network administration:} routing, iptables/firewalld, SSH, Apache, Nginx, Tomcat, DNS, FTP, CIFS, NFS, Squid, OpenVPN
-\item {\bf Network monitoring and troubleshooting:}  tcpdump, nmap, netcat, WireShark; gdb, strace
-\item {\bf Graphics and typesetting:} GIMP, Inkscape, \CONTEXT{}, \LaTeX{}, \MetaPost{}, \MetaFun{}
-\item {\bf Web development:} HTML5, CSS3, PHP, JavaScript (basic)
-\item {\bf Data representation and APIs:} XML, JSON, YAML; REST, SOAP
+\item {\bf Build tools:} Maven, Jenkins, Makefile, cmake, RPM packaging; GitHub Actions
+\item {\bf Version control:} git, Perforce, CVS, GitHub, Bitbucket, JIRA
+\item {\bf Networking:} Routing, Firewalls (iptables/firewalld), SSH, Apache, Nginx, Caddy, DNS, OpenVPN
+\item {\bf Troubleshooting:}  tcpdump, nmap, netcat, WireShark; gdb, strace
+%\item {\bf Graphics and typesetting:} GIMP, Inkscape, \CONTEXT{}, \LaTeX{}, \MetaPost{}, \MetaFun{}
+%\item {\bf Web frontend:} HTML5, CSS3, PHP, JavaScript (basic)
+%\item {\bf Data representation and APIs:} XML, JSON, YAML; REST, SOAP
 \stopitemize
 
 %\vskip -5mm
@@ -143,18 +140,21 @@
 }
 
 \Employment{Cisco Systems Inc. -- Remote}
-    {Senior Site Reliability Engineer}
+    {Senior Site Reliability Engineer (Cisco XDR)}
     {07/2021~-- present}
 
 \placefigure[right,none]{none}{\externalfigure[logos/cisco.pdf][width=3cm]}
 
 \startitemize
-\item Managing a distributed and highly available infrastructure for a flagship cybersecurity product.
-\item Orchestrating AWS infra with Hashicorp stack (Packer, Terraform, Nomad, Consul, Vault) and Kubernetes.
-\item Administration of several ElasticSearch clusters for data storage and log consolidation (ELK).
-\item Developing automation scripts in bash and Python for monitoring tools and systems integration.
-\item Operating and performing troubleshooting of orchestration, configuration, and deployment and build tools (SaltStack, Jenkins).
-\item Supporting day-to-day operations for the Linux and AWS cloud environment along with participation in on-call rotation.
+\item Manage highly available infrastructure for cloud-based cybersecurity flagship product
+\item Orchestrate AWS infrastructure using Hashicorp stack (Packer,\,Terraform,\,Nomad,\,Consul,\,Vault)
+\item ElasticSearch SME, cluster architecture, design, migration to Elastic Cloud and administration
+\item Develop automation scripts in Bash and Python for monitoring tools and systems integration
+\item Support day-to-day operations for Linux and AWS cloud environment, participating in on-call rotation
+\item Developed scripts for extracting data from Cisco APIs, facilitating data pipelines for cross-functional collaboration
+\item Modified Ubuntu installation ISOs for integration with Cisco networking products
+\item Mentored and supervised individual team members
+\item Execute change release management
 \stopitemize
 
 \blank
@@ -166,16 +166,16 @@
 \placefigure[right,none]{none}{\externalfigure[logos/analyze_re.eps][width=4cm]}
 
 \startitemize
-\item Cloud infrastructure and site reliability lead.
-\item Managed and supervised a team of TechOps engineers.
-\item Ownership of AWS computational environment (EC2, ECS, RDS, ELB, CloudWatch).
-\item Leadership of change and release management.
-\item Automation tools development with bash and Python.
-\item Analysed and implemented cybersecurity requirements and policies.
-\item Container virtualization with Docker, Docker Swarm, and AWS Elastic Container Service.
-\item Configuration management with Salt-stack and Jinja2 templates.
-\item Monitored fault-tolerant and distributed systems. Using tools such as Papertrail, PagerDuty, Datadog, etc.
-\item Managed and maintained customer-specific application configuration.
+\item Cloud infrastructure and site reliability lead
+\item Managed and supervised a team of TechOps engineers
+\item Ownership of AWS computational environment (EC2, ECS, RDS, ELB, CloudWatch)
+\item Leadership of change and release management
+\item Automation tools development with bash and Python
+\item Awarded for analysing and implementation of cybersecurity requirements and policies
+\item Implemented container virtualization with Docker, Docker Swarm, and AWS Elastic Container Service
+\item Configuration management with Salt and Jinja2 templates
+\item Monitored fault-tolerant and distributed systems using Papertrail, PagerDuty, and Datadog
+\item Maintained customer-specific application configuration
 \stopitemize
 
 \blank
@@ -187,10 +187,10 @@
 \placefigure[right,none]{none}{\externalfigure[logos/2theteam_logo.png][width=4cm]}
 
 \startitemize
-\item Designed AWS infrastructure architecture for web-based application: load balancing and support for continuous deployment.
-\item Developed configuration management with OpsWorks, Chef and Ruby, Python automation tools.
-\item Implemented monitoring and log consolidation with CloudWatch.
-\item Implemented infrastructure and operating system security and hardening.
+\item Designed AWS infrastructure architecture for web-based application: load balancing and support for continuous deployment
+\item Developed configuration management with OpsWorks, Chef and Ruby, Python automation tools
+\item Implemented monitoring and log consolidation with CloudWatch
+\item Implemented infrastructure and operating system security and hardening
 \stopitemize
 
 \blank
@@ -202,14 +202,14 @@
 \placefigure[right,none]{none}{\externalfigure[logos/athletigen.pdf][width=4cm]}
 
 \startitemize
-\item Administered Amazon Web Services (AWS) cloud environment.
-\item Developed AWS utilities with bash, Ruby and Python (with boto3 API).
-\item Maintained HIPPA compliant environment, security management and auditing with Security Monkey.
-\item Owned site reliability engineering for Athletigen web; Tomcat, Apache, Nginx troubleshooting.
-\item Implemented container virtualization with Docker.
-\item Managed of OpsWorks configuration with Chef recipes and ruby.
-\item Integrated metrics collection with {\tt collectd}, InfluxDB and Grafana or CloudWatch.
-\item Implemented network environment and OpenVPN configuration and administration.
+\item Administered Amazon Web Services (AWS) cloud environment
+\item Developed AWS utilities with bash, Ruby and Python (with boto3 API)
+\item Maintained HIPPA compliant environment, security management and auditing with Security Monkey
+\item Owned site reliability engineering for Athletigen web; Tomcat, Apache, Nginx troubleshooting
+\item Implemented container virtualization with Docker
+\item Managed of OpsWorks configuration with Chef recipes and ruby
+\item Integrated metrics collection with {\tt collectd}, InfluxDB and Grafana or CloudWatch
+\item Implemented network environment and OpenVPN configuration and administration
 \stopitemize
 
 \blank
@@ -221,12 +221,12 @@
 \placefigure[right,none]{none}{\externalfigure[logos/ZOOM_logo_curves.pdf][width=4cm]}
 
 \startitemize
-\item Programmed system utilities in Bourne-Again Shell (bash) and Python.
-\item Owner of GNU/Linux (CentOS, RHEL) architecture, product integration and development.
-\item Administered PostgreSQL database and its integration.
-\item Supervised code base, maven building and advanced RPM packaging.
-\item Facilitated training materials and sessions for ZOOM employees on Linux troubleshooting, bash programming and regular expressions usage (in English).
-\item Created technical documentation in English.
+\item Programmed system utilities in Bourne-Again Shell (bash) and Python
+\item Owner of GNU/Linux (CentOS, RHEL) architecture, product integration and development
+\item Administered PostgreSQL database and its integration
+\item Supervised code base, Maven building and advanced RPM packaging
+\item Facilitated training materials and sessions for ZOOM employees on Linux troubleshooting, bash programming and regular expressions usage (in English)
+\item Created technical documentation in English
 \stopitemize
 
 \blank
@@ -238,12 +238,12 @@
 \placefigure[right,none]{none}{\externalfigure[logos/HP_New_Logo_2D.pdf][width=2cm]}
 
 \startitemize
-\item Administered and integrated HP-UX and GNU/Linux for mission critical environments and disaster recovery as Tier 3 support (24$\times$7).
-\item Developed system automation utilities in POSIX shell, awk and perl.
-\item Implemented virtualized architecture with HP Integrity Virtual Machines.
-\item Configured critical high-availability environments based on MC/ServiceGuard and Oracle RAC.
-\item Integrated Storage Area Networks using LVM, EVA disk arrays, FC switches, Samba/CIFS and NFS.
-\item Implemented HP-UX virtualized solution for SAP environment.
+\item Administered and integrated HP-UX and GNU/Linux for mission critical environments and disaster recovery as Tier 3 support (24$\times$7)
+\item Developed system automation utilities in POSIX shell, awk and perl
+\item Implemented virtualized architecture with HP Integrity Virtual Machines
+\item Configured critical high-availability environments based on MC/ServiceGuard and Oracle RAC
+\item Integrated Storage Area Networks using LVM, EVA disk arrays, FC switches, Samba/CIFS and NFS
+\item Implemented HP-UX virtualized solution for SAP environment
 \stopitemize
 
 \blank
@@ -255,27 +255,27 @@
 \placefigure[right,none]{none}{\externalfigure[logos/racom.pdf][width=4cm]}
 
 \startitemize
-\item Implemented company web platform in HTML, CSS, and PHP.
-\item Assembled hardware and software installation for desktops and servers based on Linux and MS Windows.
-\item Developed documentation system based on \LaTeX{}, Makefiles and CVS.
-\item Created a software tool for the management of RACOM's wireless radio network, programmed in C, PHP, MySQL and Oracle databases.
-\item Created technical documentation for RACOM's radio products, using \LaTeX{}, Makefiles and CVS.
-\item Developed shell scripts for Linux server administration.
+\item Implemented company web platform in HTML, CSS, and PHP
+\item Assembled hardware and software installation for desktops and servers based on Linux and MS Windows
+\item Developed documentation system based on \LaTeX{}, Makefiles and CVS
+\item Created a software tool for the management of RACOM's wireless radio network, programmed in C, PHP, MySQL and Oracle databases
+\item Created technical documentation for RACOM's radio products, using \LaTeX{}, Makefiles and CVS
+\item Developed shell scripts for Linux server administration
 \stopitemize
 
-\section{Other Experience}
-
-\Employment{Silicon Hill -- Prague, Czech Republic}
-    {Project supervisor, software developer}{10/2002 -- 09/2015}
-
-\placefigure[right,none]{none}{\externalfigure[logos/SH-logo-col.pdf][width=4cm]}
-
-\startitemize
-    \item Developed web platform for supervising card access, used PHP, MySQL, Apache, bash.
-    \item Built Meteosat reception station for EUMETCAST with web access and Meteosat imagery processing,
-    used C, x86 assembler with SSE, PHP.
-    \item GNU/Linux evangelist and propagator, member of organizing committee of {\em InstallFest} (Prague, CZ).
-\stopitemize
+%\section{Other Experience}
+%
+%\Employment{Silicon Hill -- Prague, Czech Republic}
+%    {Project supervisor, software developer}{10/2002 -- 09/2015}
+%
+%\placefigure[right,none]{none}{\externalfigure[logos/SH-logo-col.pdf][width=4cm]}
+%
+%\startitemize
+%    \item Developed web platform for supervising card access, used PHP, MySQL, Apache, bash.
+%    \item Built Meteosat reception station for EUMETCAST with web access and Meteosat imagery processing,
+%    used C, x86 assembler with SSE, PHP.
+%    \item GNU/Linux evangelist and propagator, member of organizing committee of {\em InstallFest} (Prague, CZ).
+%\stopitemize
 
 %\blank
 
@@ -301,8 +301,8 @@
 }
 
 \startitemize
-\item New project to deliver Linux related tutorial and cheat sheets to the community.
-\item Current published materials include cheat sheets for bash, ViM, Python and networking.
+\item A project to deliver Linux related tutorial and cheat sheets to the community
+\item Current published materials include cheat sheets for bash, ViM, Python and networking
 \stopitemize
 
 \blank
@@ -313,8 +313,8 @@
 \startitemize
 \item An e-book for ham radio operators and radio listeners interested in
 special communication modes for image transmission~-- SSTV, radio facsimile
-(WEFAX) and digital SSTV (HamDRM).
-\item Available on \from[sstvhandbook].
+(WEFAX) and digital SSTV (HamDRM)
+\item Available on \from[sstvhandbook]
 \stopitemize
 
 \blank
@@ -323,8 +323,8 @@ special communication modes for image transmission~-- SSTV, radio facsimile
 
 \startitemize
 \item Technical articles on my areas of interest including: programming, Linux,
-ham radio and Meteosat reception.
-%\item Creator of {\tt housenka.sh} bash game featured on Hackday.
+ham radio and Meteosat reception
+%\item Creator of {\tt housenka.sh} bash game featured on Hackday
 \stopitemize
 
 \section{Education}
@@ -333,25 +333,25 @@ ham radio and Meteosat reception.
     \placefigure[right,none]{none}{\externalfigure[logos/logocvut.pdf][width=1.5cm]}
     \item {\bf Czech Technical University in Prague, Faculty of Electrical Engineering}\hfill{10/2002 -- 06/2008}
     \startitemize
-    \item Master's degree (Canadian equivalency evaluated by WES, ref. no. 2562464/ab).
-    \item Major/Specialization: Electrical Engineering and Computer Science.
-    \item Thesis: {\em Image processing of Meteosat data.}
+    \item Master's degree (Canadian equivalency evaluated by WES, ref. no. 2562464/ab)
+    \item Major/Specialization: Electrical Engineering and Computer Science
+    \item Thesis: {\em Image processing of Meteosat data}
     \stopitemize
 \stopitemize
 
 \startitemize
     \item {\bf Technical secondary school {\em SPŠ a VOŠ Žďár nad Sázavou}}\hfill{09/1994 -- 06/1998}
     \startitemize
-        \item Specialized in control systems and automation engineering.
+        \item Specialized in control systems and automation engineering
     \stopitemize
 \stopitemize
 
 \section{Certifications}
 
 \startitemize
-\item {\bf CLF-C01: AWS Certified Cloud Practitioner}; AWS, License W6L767HBJNQQ1GSJ, issued 2021.
-\item {\bf Red Hat Certified System Administrator}; Red Hat, License 150-126-340, issued 2015.
-\item {\bf HP0-P20: HP-UX 11i v3 System Administration}; Prometric, License TC0DUS501E, issued 2010.
+\item {\bf CLF-C01: AWS Certified Cloud Practitioner}; AWS, License W6L767HBJNQQ1GSJ, issued 2021
+\item {\bf Red Hat Certified System Administrator}; Red Hat, License 150-126-340, issued 2015
+\item {\bf HP0-P20: HP-UX 11i v3 System Administration}; Prometric, License TC0DUS501E, issued 2010
 \stopitemize
 
 \section{Languages}
@@ -359,7 +359,6 @@ ham radio and Meteosat reception.
 \startitemize
     \item Czech, native language
     \item English, full professional proficiency (IELTS overal band score 7.0)
-    \item Russian ({\switchtobodyfont[gentium]русский язык}), basic
 \stopitemize
 
 \stoptext
