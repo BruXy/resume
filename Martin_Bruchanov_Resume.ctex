@@ -2,7 +2,7 @@
 \language[en]
 \enableregime[utf] % latin2
 \pdfvariable minorversion 4 % verze pdf
-\setupbodyfont[10.8pt]  %
+\setupbodyfont[11pt]  %
 \setuppapersize[letter, portrait] % A3, A4, A5, A6; landscape
 
 % Debugovani
@@ -40,7 +40,7 @@
     rightmargin=10pt,
 %    color=darkgreen,
     style={\switchtobodyfont[14pt]\bf},
-    before={\vskip 1mm},
+    before={\vskip 5mm},
 %    after=\nowhitespace,
 ]
 
@@ -109,9 +109,9 @@ environments.
 \item {\bf GNU/Linux Administration:} CentOS/RedHat/Fedora, Ubuntu, Amazon Linux; HP-UX
 \item {\bf Configuration Management:} SaltStack, Chef, Terraform, Ansible, Vagrant
 \item {\bf Containerization & Virtualization:} Docker, Kubernetes, AWS ECS, Nomad, VMware, VirtualBox
-\item {\bf Monitoring & Logging:} CloudWatch, ELK stack, Datadog, PaperTrail, collectd, InfluxDB, Grafana
-\item {\bf Database services:} PostgreSQL, MySQL, MongoDB, Oracle, Elastic Cloud
-\item {\bf Data analytics:} BigQuery, Elasticsearch
+\item {\bf Monitoring & Logging:} CloudWatch, ELK stack, Datadog, PaperTrail, collectd, InfluxDB, Grafana, Splunk Signalfx
+\item {\bf Database services:} PostgreSQL, MySQL, MongoDB, Oracle, Elastic Cloud, Amazon Redshift
+\item {\bf Data analytics:} BigQuery, Elasticsearch, Snowflake
 \item {\bf Security:} SELinux, Metasploit, Nessus; HIPPA, PCI compliance
 \item {\bf Build tools:} Maven, Jenkins, Makefile, cmake, RPM packaging; GitHub Actions
 \item {\bf Version control:} git, Perforce, CVS, GitHub, Bitbucket, JIRA
@@ -147,14 +147,16 @@ environments.
 
 \startitemize
 \item Manage highly available infrastructure for cloud-based cybersecurity flagship product
-\item Orchestrate AWS infrastructure using Hashicorp stack (Packer,\,Terraform,\,Nomad,\,Consul,\,Vault)
-\item ElasticSearch SME, cluster architecture, design, migration to Elastic Cloud and administration
-\item Develop automation scripts in Bash and Python for monitoring tools and systems integration
-\item Support day-to-day operations for Linux and AWS cloud environment, participating in on-call rotation
-\item Developed scripts for extracting data from Cisco APIs, facilitating data pipelines for cross-functional collaboration
-\item Modified Ubuntu installation ISOs for integration with Cisco networking products
-\item Mentored and supervised individual team members
 \item Execute change release management
+\item Orchestrate AWS infrastructure using Hashicorp stack (Packer,\,Terraform,\,Nomad,\,Consul,\,Vault) and Kubernetes
+\item ElasticSearch SME, cluster architecture, design, migration to Elastic Cloud and administration
+\item Bash and Python expert specializing in parallel processing to optimize performance and efficiency in large-scale computing tasks
+\item Develop automated deployment of Splunk O11y detectors
+\item Develop data pipeline for Cisco APIs, facilitating cross-functional collaboration
+\item Systems engineering of Ubuntu distribution for integration with Cisco networking products
+\item Administration of Amazon Redshift and AWS lambdas for data imports
+\item Support day-to-day operations for Linux and AWS cloud environment, participating in on-call rotation
+\item Mentore and supervise individual team members
 \stopitemize
 
 \blank
@@ -166,12 +168,12 @@ environments.
 \placefigure[right,none]{none}{\externalfigure[logos/analyze_re.eps][width=4cm]}
 
 \startitemize
-\item Cloud infrastructure and site reliability lead
+\item Cloud infrastructure for High-Performance Computing (HPC) and site reliability lead
 \item Managed and supervised a team of TechOps engineers
 \item Ownership of AWS computational environment (EC2, ECS, RDS, ELB, CloudWatch)
+\item Active participation in prevention and solving cybersecurity threats, awarded for analysing and implementation of security requirements and policies
 \item Leadership of change and release management
 \item Automation tools development with bash and Python
-\item Awarded for analysing and implementation of cybersecurity requirements and policies
 \item Implemented container virtualization with Docker, Docker Swarm, and AWS Elastic Container Service
 \item Configuration management with Salt and Jinja2 templates
 \item Monitored fault-tolerant and distributed systems using Papertrail, PagerDuty, and Datadog
