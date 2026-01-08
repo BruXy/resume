@@ -17,12 +17,40 @@
 	style=\tfx,top=\vss,bottom=\vss,background=color,backgroundcolor=card,
 	offset=5pt]{%
 {%\tfx
-{\bf Current address:} \dotfill{} Halifax, Nova Scotia \\
-{\bf Home page:} \dotfill{} \from[homepage]    \\
-{\bf Email:} \dotfill{} {\tt \from[secmail]} \\
-{\bf Linkedin:} \dotfill{} \from[linkedin]     \\
-{\bf GitHub:} \dotfill{} \from[github] \\
-{\bf Mobile:} \dotfill{} (+1)\,902-476-2756    \\
+\startluacode
+
+function ascii2str(asciiList)
+    local result = ""
+    for i, asciiValue in ipairs(asciiList) do
+        result = result .. string.char(asciiValue)
+    end
+    return result
+end
+
+if os.getenv("CANADA") then
+    local phone = { 40, 43, 49, 41, 92, 44, 57, 48, 50, 45, 52, 55, 54, 45, 50, 55, 53, 54 }
+    context(
+    [[{\bf Current address:} \dotfill{} Halifax, Nova Scotia \\
+    {\bf Home page:} \dotfill{} \from[homepage]    \\
+    {\bf Email:} \dotfill{} {\tt \from[secmail]} \\
+    {\bf Linkedin:} \dotfill{} \from[linkedin]     \\
+    {\bf GitHub:} \dotfill{} \from[github] \\
+    {\bf Mobile:} \dotfill{} 
+    ]])
+    context(ascii2str(phone))
+else
+    local phone = { 43, 52, 50, 48, 92, 44, 55, 50, 52, 45, 50, 52, 55, 45, 57, 52, 52 }
+    context(
+    [[{\bf Current address:} \dotfill{} Beroun, Czech Republic \\
+    {\bf Home page:} \dotfill{} \from[homepage]    \\
+    {\bf Email:} \dotfill{} {\tt \from[secmail]}, {\tt \from[mail]}      \\
+    {\bf Linkedin:} \dotfill{} \from[linkedin]     \\
+    {\bf GitHub:} \dotfill{} \from[github] \\
+    {\bf Mobile:} \dotfill{}
+    ]])
+    context(ascii2str(phone))
+end
+\stopluacode
 }}}{}
 \stopcombination
 
