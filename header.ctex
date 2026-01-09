@@ -28,34 +28,23 @@ function ascii2str(asciiList)
 end
 
 if os.getenv("CANADA") then
-    local phone = { 40, 43, 49, 41, 92, 44, 57, 48, 50, 45, 52, 55, 54, 45, 50, 55, 53, 54 }
-    context(
-    [[{\bf Current address:} \dotfill{} Halifax, Nova Scotia \\
-    {\bf Home page:} \dotfill{} \from[homepage]    \\
-    {\bf Email:} \dotfill{} {\tt \from[secmail]} \\
-    {\bf Linkedin:} \dotfill{} \from[linkedin]     \\
-    {\bf GitHub:} \dotfill{} \from[github] \\
-    {\bf Mobile:} \dotfill{} 
-    ]])
-    context(ascii2str(phone))
+    phone = { 40, 43, 49, 41, 92, 44, 57, 48, 50, 45, 52, 55, 54, 45, 50, 55, 53, 54 }
+    address = "Halifax, Nova Scotia"
 else
-    local phone = { 43, 52, 50, 48, 92, 44, 55, 50, 52, 45, 50, 52, 55, 45, 57, 52, 52 }
-    context(
-    [[{\bf Current address:} \dotfill{} Beroun, Czech Republic \\
-    {\bf Home page:} \dotfill{} \from[homepage]    \\
+    phone = { 43, 52, 50, 48, 92, 44, 55, 50, 52, 32, 50, 52, 55, 32, 57, 52, 52 }
+    address = "Beroun, Czech Republic"
+end
+
+context("{\\bf Current address:} \\dotfill{} " .. address .. "\\\\")
+context(
+    [[{\bf Home page:} \dotfill{} \from[homepage]    \\
     {\bf Email:} \dotfill{} {\tt \from[secmail]}, {\tt \from[mail]}      \\
     {\bf Linkedin:} \dotfill{} \from[linkedin]     \\
     {\bf GitHub:} \dotfill{} \from[github] \\
     {\bf Mobile:} \dotfill{}
     ]])
-    context(ascii2str(phone))
-end
+context(ascii2str(phone))
 \stopluacode
 }}}{}
 \stopcombination
-
-%%%
-%\hairline
-%\blank[1em]
-
 
